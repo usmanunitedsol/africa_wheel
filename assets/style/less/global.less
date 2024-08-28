@@ -42,7 +42,7 @@ q:before, q:after {
 }
 img{max-width: 100%;}
 strong{font-weight: 600;}
-a { color:#3E47DD; text-decoration:none; transition: background-color 0.4s ease 0s, border 0s ease 0s, color 0.4s ease 0s, opacity 0.4s ease-in-out 0s;font-family: 'poppins', sans-serif; }
+a { color:#3E47DD; text-decoration:none; transition: background-color 0.4s ease 0s, border 0s ease 0s, color 0.4s ease 0s, opacity 0.4s ease-in-out 0s;font-family: 'Helvetica Now Display', sans-serif; }
 button{font-family: 'Helvetica Now Display', sans-serif;}
 table {
 	border-collapse: collapse;
@@ -64,6 +64,7 @@ p{font-family: 'Helvetica Now Display', sans-serif; font-weight:400;}
     /* Primary color variables */
     @primary_color:#00397B;
     @secondary_color:#E3A400;
+    @red_color:#E61122;
     @primary_cta_color:#00397B;
     /* Content color variable */
     @title_color:#080808;
@@ -111,11 +112,23 @@ body{
 
 
 .PrimaryCta() {
-    font-size: 18px; line-height: 26px; font-weight: 400; border: 1px solid #00397B; padding: 10px 15px; box-sizing: border-box; color:@primarywhiteColor; background-color: @primary_cta_color; border-radius: 50px; cursor: pointer; display: inline-block; min-width: 10em; text-align: center; transition: .3s ease-in; 
+    font-size: 18px; line-height: 26px; font-weight: 400; border: 1px solid #00397B; padding: 10px 15px; box-sizing: border-box; color:@primarywhiteColor; background-color: @primary_cta_color; border-radius: 10px; cursor: pointer; display: inline-block; min-width: 10em; text-align: center; transition: .3s ease-in; 
   
     &:hover {
       background-color: @primarywhiteColor;
       color: @primary_cta_color;
+    }
+
+    &.transparent_cta{
+      background-color:transparent;
+      color: @red_color;
+      border: 1px solid @red_color;
+       
+    &:hover {
+      background-color: @primary_cta_color;
+      color:  @primarywhiteColor;
+      border-color: @primary_color;
+    }
     }
   
      @media @media-query-base  {
@@ -225,7 +238,7 @@ body{
 .primary_title{
     .primaryTitle
 }
-.secondary_title{  .secondarytitle()} 
+
 
 .main_container{.mainContainer()}
 .primarybg{background-color: @primary_bg;}
