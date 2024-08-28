@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	background:#fff;
-  font-family: 'poppins', sans-serif;
+  font-family: 'Helvetica Now Display', sans-serif;
 	color:#000000;
 }
 ol, ul {
@@ -42,34 +42,34 @@ q:before, q:after {
 }
 img{max-width: 100%;}
 strong{font-weight: 600;}
-a { color:#CC8209; text-decoration:none; transition: background-color 0.4s ease 0s, border 0s ease 0s, color 0.4s ease 0s, opacity 0.4s ease-in-out 0s;font-family: 'poppins', sans-serif; }
-button{font-family: 'poppins', sans-serif;}
+a { color:#3E47DD; text-decoration:none; transition: background-color 0.4s ease 0s, border 0s ease 0s, color 0.4s ease 0s, opacity 0.4s ease-in-out 0s;font-family: 'poppins', sans-serif; }
+button{font-family: 'Helvetica Now Display', sans-serif;}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-h1, h2{font-family: 'poppins', sans-serif; font-weight: 700;}
-h3, h4{font-family: 'poppins', sans-serif; font-weight: 600;}
-p{font-family: 'poppins', sans-serif; font-weight:400;} 
+h1, h2{font-family: 'Helvetica Now Display', sans-serif; font-weight: 700;}
+h3, h4{font-family: 'Helvetica Now Display', sans-serif; font-weight: 600;}
+p{font-family: 'Helvetica Now Display', sans-serif; font-weight:400;} 
 
 
 /*  */
 
 
     /* bg color variable */
-    @primary_bg:#FDF9F3;
+    @primary_bg:#ECF4FF;
     @primarywhiteColor:#fff;
     @secondary_bg:#F0E7D7;
-    @section_bg:#FFFFFF;
+    @section_bg:#FEF8E9;
     /* Primary color variables */
-    @primary_color:#C5203C;
-    @secondary_color:#CC8209;
-    @primary_cta_color:#A26301;
+    @primary_color:#00397B;
+    @secondary_color:#E3A400;
+    @primary_cta_color:#00397B;
     /* Content color variable */
-    @title_color:#1B1B1B;
-    @secondary_title_color:#313131;
-    @text_color:#4C4C4C;
-    @gray:#686868;
+    @title_color:#080808;
+    @secondary_title_color:#141652;
+    @text_color:#1C1D26;
+  
     
   
 
@@ -87,7 +87,7 @@ body{
 // Media query variables
 @media-query-base: ~"only screen and (max-width: @{breakpoints-base})";
 @media-query-tablet: ~"only screen and (min-width: @{breakpoints-tablet}) and (max-width: @{breakpoints-base})";
-@media-query-mediumDesktop: ~"only screen and (min-width: @{breakpoints-base}) and (max-width: @{breakpoints-mediumDesktop})";
+@media-query-mediumDesktop: ~"only screen and (min-width:1025px) and (max-width: @{breakpoints-mediumDesktop})";
 
 // Define mixins
 
@@ -111,11 +111,11 @@ body{
 
 
 .PrimaryCta() {
-    font-size: 18px; line-height: 26px; font-weight: 400; border: 1px solid #A26301; padding: 10px 15px; box-sizing: border-box; color:@primary_cta_color; background-color: transparent; border-radius: 50px; cursor: pointer; display: inline-block; min-width: 10em; text-align: center; transition: .3s ease-in; 
+    font-size: 18px; line-height: 26px; font-weight: 400; border: 1px solid #00397B; padding: 10px 15px; box-sizing: border-box; color:@primarywhiteColor; background-color: @primary_cta_color; border-radius: 50px; cursor: pointer; display: inline-block; min-width: 10em; text-align: center; transition: .3s ease-in; 
   
     &:hover {
-      background-color: @primary_cta_color;
-      color: #fff;
+      background-color: @primarywhiteColor;
+      color: @primary_cta_color;
     }
   
      @media @media-query-base  {
@@ -133,9 +133,9 @@ body{
 
   .primaryTitle()
   {
-    font-size: 48px; line-height: 60px; font-weight: 600; padding-bottom:20px; text-align: center; color: @title_color; text-transform: uppercase;letter-spacing: 6.72px;
+    font-size: 50px; line-height: 62px; font-weight: 700; padding-bottom:20px; text-align: center; color: @title_color; text-transform: uppercase;
 	@media @media-query-base{
-		font-size: 25px; line-height: 36px; padding-bottom: 10px;letter-spacing:2px;
+		font-size: 24px; line-height: 36px; padding-bottom: 10px;
 	}
 	@media @media-query-tablet{
 		font-size: 30px; line-height: 40px; padding-bottom: 10px;
@@ -145,16 +145,7 @@ body{
 	}
   }
 
-  .secondarytitle()
-  {
-    font-size: 18px; line-height: 28px; font-weight: 600; color: #38464E;  
-	@media @media-query-base{
-		font-size: 16px; line-height: 24px; 
-	}
-	
-
-  }
-
+ 
 
   .primaryText{
 	font-size: 18px; line-height: 28px; font-weight: 400; color: @text_color; padding-bottom: 0px;
@@ -166,6 +157,19 @@ body{
 	}
 	@media @media-query-mediumDesktop{
 		font-size: 18px; line-height: 29px;
+	}
+}
+
+.secondaryText{
+	font-size: 16px; line-height: 24px; font-weight: 400; color: @text_color; padding-bottom: 0px;
+	@media @media-query-base{
+		font-size: 16px; line-height: 26px;
+	}
+	@media @media-query-tablet{
+		font-size: 16px; line-height: 26px;
+	}
+	@media @media-query-mediumDesktop{
+		font-size: 16px; line-height: 29px;
 	}
 }
 
@@ -225,7 +229,7 @@ body{
 
 .main_container{.mainContainer()}
 .primarybg{background-color: @primary_bg;}
-.form_bg{background-color: #FEFBF8;}
+
 
 
 @media @media-query-base{
