@@ -25,21 +25,19 @@
         justify-content: space-between;
         gap: 40px;
         .nav_bar{justify-content: center;}
+
+     
       }
 
 
-    .nav-section-dropdown{
-      select{border:0px; background-color: transparent; font-size: 15px; line-height: 22px; color: #000000; font-weight: 400; text-transform: uppercase;  outline: none;    font-family: 'poppins', sans-serif; appearance: none; background-image: url("../images/select_arrow.png"); background-repeat: no-repeat; background-position: 98% center; background-size: 10px;    padding-right: 20px;padding-left: 20px; box-sizing: border-box;}
-  }
+ 
     .res_mobile{display: none;}
     .nav-section-logo{ text-align: center;}
-    .nav-section-right{
-
-     
+    .nav-section-right{ 
          .nav-section-ctas{display: flex; align-items: center; gap: 25px; justify-content: end;
              .sell_car_cta{
                  .transparent_cta{
-                  min-width: 9em; padding: 5px 15px;font-size: 16px; line-height: 20px;
+                  min-width: 9em; padding: 5px 15px;font-size: 16px; line-height: 20px; color: #E61122; font-weight: 500;
                  }
              }
         }
@@ -52,17 +50,34 @@
     }
     }
      .nav-section{
+    
       .close_side_bar{display: none;}
           .nav_bar{display: flex; gap: 45px;
-           
+   
               li{
-                 display: flex; align-items: center; gap: 15px; cursor: pointer;
+                 display: flex; align-items: center; gap: 15px; cursor: pointer;   position: relative; padding-block: 10px;
                 a{font-size: 18px; line-height: 26px; color: #212121; font-weight: 400; text-transform: capitalize;
-                  &:hover{color:@primary_color;}
+                
+                }
+        
+                &:hover{
+                >   a{  color:@red_color;}
+                  svg{
+                    path{
+                      fill:@red_color;
+                    }
+                  }
                 }
               
                 
               }
+            .first_layer { display: none; position: absolute; z-index: 10; left: 0px; top: 100%; min-width: 10em; padding: 15px 20px; box-sizing: border-box; background-color: var(--primary_bg); border-radius: 10px; box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%); }
+
+           &:hover{
+            .first_layer {
+              display: block;
+          }
+           }
          }
          
        }
@@ -97,7 +112,7 @@
   
       }
       .nav-section-left{
-        .sell_car_cta{ display: block; text-align: center; margin-top: 20px;
+        .sell_car_cta{ display: block; text-align: left; margin-top: 20px;
           .transparent_cta{
            min-width: 9em; padding: 6px 15px;font-size: 15px; line-height: 17px;
           }
@@ -110,17 +125,21 @@
         }
         }
        
-            .nav_bar{flex-direction: column;  gap: 10px;
+            .nav_bar{flex-direction: column;  gap: 0px;
              
                 li{
-                   display: flex; align-items: center; gap: 10px; cursor: pointer;
+                  align-items: center; gap: 5px; cursor: pointer; justify-content: space-between; flex-wrap: wrap; padding-block: 10px;
                   a{font-size: 16px; line-height: 24px; 
-                    &:hover{color:@primary_color;}
+                 
                   }
                 
                   
                 }
+                .first_layer{        position: static;
+                  min-width: 100%;}
+                
                 .drop_icon{
+                  position: relative;
                   svg{width: 8px;}
                 }
            }
@@ -137,7 +156,9 @@
 }
 
 @media @media-query-tablet{
- 
+  .nav-sections{  
+    .navigation{  .nav-section-logo{img{width: 70%;}}}
+  }
 
 }
 
@@ -187,7 +208,7 @@
                 li{
                    display: flex; align-items: center; gap: 15px; cursor: pointer;
                   a{font-size: 16px; line-height: 23px; color: #212121; font-weight: 400; text-transform: capitalize;
-                    &:hover{color:@primary_color;}
+                 
                   }
                 
                   
@@ -210,7 +231,7 @@
   
   
      
-    .navigation{padding: 10px 40px; display: flex; justify-content: space-between; gap: 30px; 
+    .navigation{padding: 10px 50px; display: flex; justify-content: space-between; gap: 30px; 
 
 
 

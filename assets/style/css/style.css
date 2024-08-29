@@ -420,25 +420,6 @@ body {
 .nav-sections .navigation .nav-section-left .nav_bar {
   justify-content: center;
 }
-.nav-sections .navigation .nav-section-dropdown select {
-  border: 0px;
-  background-color: transparent;
-  font-size: 15px;
-  line-height: 22px;
-  color: #000000;
-  font-weight: 400;
-  text-transform: uppercase;
-  outline: none;
-  font-family: 'poppins', sans-serif;
-  appearance: none;
-  background-image: url("../images/select_arrow.png");
-  background-repeat: no-repeat;
-  background-position: 98% center;
-  background-size: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  box-sizing: border-box;
-}
 .nav-sections .navigation .res_mobile {
   display: none;
 }
@@ -456,6 +437,8 @@ body {
   padding: 5px 15px;
   font-size: 16px;
   line-height: 20px;
+  color: #E61122;
+  font-weight: 500;
 }
 .nav-sections .navigation .nav-section-left .sell_car_cta {
   display: none;
@@ -472,6 +455,8 @@ body {
   align-items: center;
   gap: 15px;
   cursor: pointer;
+  position: relative;
+  padding-block: 10px;
 }
 .nav-sections .navigation .nav-section .nav_bar li a {
   font-size: 18px;
@@ -480,8 +465,27 @@ body {
   font-weight: 400;
   text-transform: capitalize;
 }
-.nav-sections .navigation .nav-section .nav_bar li a:hover {
-  color: #00397B;
+.nav-sections .navigation .nav-section .nav_bar li:hover > a {
+  color: #E61122;
+}
+.nav-sections .navigation .nav-section .nav_bar li:hover svg path {
+  fill: #E61122;
+}
+.nav-sections .navigation .nav-section .nav_bar .first_layer {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  left: 0px;
+  top: 100%;
+  min-width: 10em;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background-color: var(--primary_bg);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.nav-sections .navigation .nav-section .nav_bar:hover .first_layer {
+  display: block;
 }
 @media only screen and (max-width: 1024px) {
   .nav-sections .navigation {
@@ -517,7 +521,7 @@ body {
   }
   .nav-sections .navigation .nav-section-left .sell_car_cta {
     display: block;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
   }
   .nav-sections .navigation .nav-section-left .sell_car_cta .transparent_cta {
@@ -535,23 +539,34 @@ body {
   }
   .nav-sections .navigation .nav-section .nav_bar {
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
   }
   .nav-sections .navigation .nav-section .nav_bar li {
-    display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     cursor: pointer;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: 10px;
   }
   .nav-sections .navigation .nav-section .nav_bar li a {
     font-size: 16px;
     line-height: 24px;
   }
-  .nav-sections .navigation .nav-section .nav_bar li a:hover {
-    color: #00397B;
+  .nav-sections .navigation .nav-section .nav_bar .first_layer {
+    position: static;
+    min-width: 100%;
+  }
+  .nav-sections .navigation .nav-section .nav_bar .drop_icon {
+    position: relative;
   }
   .nav-sections .navigation .nav-section .nav_bar .drop_icon svg {
     width: 8px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-sections .navigation .nav-section-logo img {
+    width: 70%;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1480px) {
@@ -606,16 +621,13 @@ body {
     font-weight: 400;
     text-transform: capitalize;
   }
-  .nav-sections .navigation .nav-section .nav_bar li a:hover {
-    color: #00397B;
-  }
   .nav-sections .navigation .nav-section-logo img {
     width: 80%;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1480px) {
   .nav-sections .navigation {
-    padding: 10px 40px;
+    padding: 10px 50px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
