@@ -17,8 +17,8 @@ footer { background-color: #03254C;
             .footer_title { font-size: 16px; line-height: 22px; font-weight: 600; color: #ffffff; margin-bottom: 15px;  letter-spacing: 2.4px; }
 
             .links{ 
-                .footer_link { font-size: 16px; line-height: 22px; color: #b1b1b1; display: block; padding: 5px 0px; box-sizing: border-box; transition: .3s ease-in-out;
-                &:hover{color: #ffffff ;}
+                .footer_link {
+                font-size: 16px; line-height: 22px; color: #b1b1b1; display: block; padding: 5px 0px; box-sizing: border-box; transition: .3s ease-in-out;
                 }
             }   
         }
@@ -52,7 +52,10 @@ footer { background-color: #03254C;
                 .footer_title { font-size: 16px; line-height: 22px; margin: 0; padding: 15px 0px; border-bottom: 0.5px solid rgba(255, 255, 255, 35%); background-image: url("../images/plus-64.webp"); background-repeat: no-repeat; background-size: 12px; background-position: 98% center; letter-spacing: 2px; }
 
                 .links{display: none; 
-                    .footer_link { font-size: 16px; line-height: 22px; display: block; padding: 5px 0px; transition: .3s ease-in-out; }
+                    .footer_link {
+                        font-size: 16px; line-height: 22px; display: block; padding: 5px 0px; transition: .3s ease-in-out;
+                        &:hover{color:  ;}
+                    }
                 }   
             }
     

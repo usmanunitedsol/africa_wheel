@@ -876,6 +876,9 @@ footer .footer_body .footer_block .links .footer_link {
   box-sizing: border-box;
   transition: 0.3s ease-in-out;
 }
+footer .footer_body .footer_block .links .footer_link:hover {
+  color: #ffffff;
+}
 footer .footer_bottom {
   display: flex;
   align-items: center;
@@ -939,9 +942,6 @@ footer .footer_bottom .bottom_footer p {
     display: block;
     padding: 5px 0px;
     transition: 0.3s ease-in-out;
-  }
-  footer .footer_body .footer_block .links .footer_link:hover {
-    color: #00397B;
   }
   footer .footer_bottom {
     width: 100%;
