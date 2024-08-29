@@ -31,7 +31,11 @@
   justify-content: space-between;
   gap: 40px;
 }
+<<<<<<< HEAD
 .nav-sections .navigation .nav-section-left .nav_bar {
+=======
+.page-header .nav-section .nav-section-left .nav_bar {
+>>>>>>> 329a3f210dd45410b93d3e0c07d9cc786106bf6f
   justify-content: center;
 }
 .nav-sections .navigation .res_mobile {
