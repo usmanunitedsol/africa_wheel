@@ -2,14 +2,10 @@
 
 
 
-.header_container{max-width: 1900px; width: 100%; margin: auto;}
-.bg_header{    background-color: rgba(255, 255, 255, 0.9);  }
-.home_page{
-  .page-header{
-    position: fixed; top: 0px; width:100%;
-  }
-}
-.page-header{
+.nav-sections-item-content{max-width: 1900px; width: 100%; margin: auto;}
+.nav-sections-items{    background-color: rgba(255, 255, 255, 0.9);  }
+
+.nav-sections{
   // position: relative;
   z-index: 99; 
   position: fixed;
@@ -17,7 +13,7 @@
   width: 100%;
 
    
-    .nav-section{padding: 20px 30px; display: flex; justify-content: space-between; gap: 40px; box-sizing: border-box; align-items: center;
+    .navigation{padding: 10px 40px; display: flex; justify-content: space-between; gap: 40px; box-sizing: border-box; align-items: center;
      width: 100%;
       &.zero_top{top: 0px;}
       // &.remove_space{ }
@@ -35,29 +31,36 @@
     .nav-section-dropdown{
       select{border:0px; background-color: transparent; font-size: 15px; line-height: 22px; color: #000000; font-weight: 400; text-transform: uppercase;  outline: none;    font-family: 'poppins', sans-serif; appearance: none; background-image: url("../images/select_arrow.png"); background-repeat: no-repeat; background-position: 98% center; background-size: 10px;    padding-right: 20px;padding-left: 20px; box-sizing: border-box;}
   }
-    .mobile_dropdown{display: none;}
+    .res_mobile{display: none;}
     .nav-section-logo{ text-align: center;}
     .nav-section-right{
 
      
          .nav-section-ctas{display: flex; align-items: center; gap: 25px; justify-content: end;
-           
+             .sell_car_cta{
+                 .transparent_cta{
+                  min-width: 9em; padding: 5px 15px;font-size: 16px; line-height: 20px;
+                 }
+             }
         }
-         .navigation{
-           
-          .close_side_bar{display: none;}
 
-         }
     }
-     .navigation{
+
+    .nav-section-left{
+      .sell_car_cta{ display: none;
+
+    }
+    }
+     .nav-section{
       .close_side_bar{display: none;}
           .nav_bar{display: flex; gap: 45px;
-              &.category{display: none;}
+           
               li{
-                a{font-size: 20px; line-height: 28px; color: #000000; font-weight: 400; text-transform: uppercase;
+                 display: flex; align-items: center; gap: 15px; cursor: pointer;
+                a{font-size: 18px; line-height: 26px; color: #212121; font-weight: 400; text-transform: capitalize;
                   &:hover{color:@primary_color;}
                 }
-                &:first-child{padding-left: 25px;}
+              
                 
               }
          }
@@ -70,127 +73,71 @@
 
 @media @media-query-base{
 
-  .delivery_txt{
-    background-color: #FFFF; padding: 8px; text-align: center; padding-bottom: 0px;
-    p{font-size: 14px;}
-     span{  display: none;}
-     a{color: #C5203C;font-weight: 500;}
-}
-
-.page-header{
-  &.remove_space{.nav-section{ .nav-section-logo{img{width: 35px;}}}}
-    .nav-section{padding: 15px 25px ; display: flex; justify-content: normal; gap: 5px; box-sizing: border-box; flex-wrap: wrap;        align-items: center;position: relative;
-   
-      .nav-section-left{
-          flex: 1;
-        .nav-section-filter{display: flex;  align-items: center; 
-          .hum_menu{img{width: 22px;}}
-          .nav-section-dropdown{display: none;}
  
-        }
+  .nav-sections{
+   
+     
+      .navigation{padding: 10px; gap: 20px; box-sizing: border-box; align-items: center;
+       width: 100%;
+    
+  
 
-     
-      
-     
-    }
-    .nav-section-logo{ flex: 1;  img{width: 50px;transition: 0.3s ease-in };}
-    .nav-section-dropdown{
-      select{padding-left: 0px; box-sizing: border-box;font-size: 14px;}
-  }
-    .mobile_dropdown{display: block; width: 100%; text-align: center;}
-    .nav-section-right{
-      flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-         .nav-section-ctas{display: flex; align-items: center; gap: 20px; justify-content: end;img{width: 22px;}
-           .call_cta{display: none; } 
-           .search_field{border: 0px solid #000000; border-radius: 0px;padding: 0px 0px;  width: 22px; 
-              input{display: none; background-color: transparent; border: 0px; outline: none; color: #000000; font-size: 15px; line-height: 17px; 
-                &::placeholder{color: #000000;}
-                &.visible{
-                  display: block;position: absolute; top: 85%; left: 0px; transform: translate(-0%, -50%); z-index: 2; max-width: 100%; width: 100%; border: 1px solid #0000; background-color: #fff; padding: 10px; border-radius: 0px; box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-                }
-              
-              }
-          }
-        }
-         .navigation{
-          display: none;
+      .res_mobile{display: block;}
+      .nav-section-logo{ text-align: center; img{width: 50px;}}
+      .nav-section-right{
+  
        
-         
-            li{
-                &:first-child{padding-left: 0px;}
-                &:last-child{padding-right: 0px;}
-            }
-         }
-    }
-     .navigation{
-      display: none;
-      .close_side_bar{  display: flex;width: 100%; justify-content: flex-end; svg{width: 20px;}}
-            
-          .nav_bar{display: flex; gap: 20px; flex-direction: column;
-              &.category{display: flex; padding-top: 20px;}
-              li{
-                a{font-size: 16px; line-height: 23px; color: #000000; font-weight: 400; text-transform: uppercase;}
-                &:first-child{padding-left: 0px;}
-              }
-         }
-         
-       }
-    }
-
-    .block-minicart{
-      .dialog_top_cnt{
-            .primary_title {font-size: 20px; line-height: 30px;padding-bottom: 30px;text-transform: capitalize;}
-      }
-    
-      .product{ gap: 20px; margin-bottom: 20px; flex-wrap: wrap;
-        .product-item-name{h3{font-size: 18px; line-height: 30px; padding-bottom: 15px;}}
-        .product-item-details{ 
-          flex: 1;
-          .details-qty{padding-bottom: 15px; gap: 10px;}
-          .price_remove{
-               .product-item-pricing{flex: 1;
-                  .price{font-weight: 600;color: #121212;}
+           .nav-section-ctas{display: flex; align-items: center; gap: 15px; justify-content: end;
+               .sell_car_cta{ display: none;
+                   .transparent_cta{
+                    min-width: 9em; padding: 6px 15px;font-size: 16px; line-height: 23px;
+                   }
                }
-             
-          
           }
+  
+      }
+      .nav-section-left{
+        .sell_car_cta{ display: block; text-align: center; margin-top: 20px;
+          .transparent_cta{
+           min-width: 9em; padding: 6px 15px;font-size: 15px; line-height: 17px;
+          }
+      }
+      }
+       .nav-section{
+        .close_side_bar{display: block; text-align: end;
+        svg {
+            width: 20px;
         }
+        }
+       
+            .nav_bar{flex-direction: column;  gap: 10px;
+             
+                li{
+                   display: flex; align-items: center; gap: 10px; cursor: pointer;
+                  a{font-size: 16px; line-height: 24px; 
+                    &:hover{color:@primary_color;}
+                  }
+                
+                  
+                }
+                .drop_icon{
+                  svg{width: 8px;}
+                }
+           }
+           
+         }
       }
-    
-    
-      .note{
-           .primary_text{padding-bottom: 15px;}
-          .checkbox_note{
-              padding-bottom: 20px;
-          
-          }
-      }
-    
-    }
-}
+  
+   
+  }
+
 
 
 
 }
 
 @media @media-query-tablet{
-  .page-header{
-    .nav-section {
-      .nav-section-right {
-        .nav-section-ctas {gap: 20px; img{width: 26px;}; .search_field  {width: 26px;}}
-      }
-      .nav-section-left {
-        .nav-section-filter {
-          .hum_menu img {
-            width: 26px;
-        }
-        }
-      }
-    }
-  }
+ 
 
 }
 
@@ -198,126 +145,112 @@
   
 
 @media screen and (min-width:1025px) and (max-width:1480px) {
-    .page-header{
-        .nav-section{ padding: 20px 30px;  gap: 10px;
+  .nav-sections{
+  
+  
+     
+      .navigation{padding: 15px 30px; display: flex; justify-content: space-between; gap: 30px; 
 
-
-        .nav-section-right{
-          gap: 30px;
-             .nav-section-ctas{display: flex; align-items: center; gap: 10px; justify-content: end;
-             
-               .search_field{border: 1px solid #000000; border-radius: 40px;padding: 5px 10px; display: flex;align-items: center; gap: 30px; max-width: 200px; width: 100%; justify-content: space-between;
-               
-              }
-            }
-
-            .navigation{
-                li{
-                    &:first-child{padding-left: 0px;}
-                    &:last-child{padding-right: 0px;}
-                }
-             }
-         
+  
+          .nav-section-left{
+            flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 20px;
+          .nav_bar{justify-content: center;}
         }
-        .nav-section-left {gap: 30px;}
-        .nav-section-logo{min-width: 10%;img{width: 120px;}}
-         .navigation{
-             
-              .nav_bar{display: flex; gap: 13px;
-                  li{
-                    a{font-size: 15px; line-height: 22px;}
-                    &:first-child{padding-left: 0px;}
-                  }
-             }
-             
-           }
-        }
+  
 
-        .block-minicart{
-          .dialog_top_cnt{
-                .primary_title {font-size: 30px; line-height: 42px;}
+      .nav-section-right{
+  
+       
+           .nav-section-ctas{display: flex; align-items: center; gap: 15px; justify-content: end;
+               .sell_car_cta{
+                   .transparent_cta{
+                    min-width: 8em; padding: 6px 15px;font-size: 15px; line-height: 18px;
+                   }
+               }
           }
-      
-          .product{display: flex;align-items: flex-start; gap: 40px; margin-bottom: 40px;
-            .product-item-name{h3{font-size: 22px; line-height: 32px; color: #313131; padding-bottom: 25px;}}
-          }
-         
-      
-        
+  
       }
-    }
+  
+      .nav-section-left{
+        .sell_car_cta{ display: none;
+  
+      }
+      }
+       .nav-section{
+        .close_side_bar{display: none;}
+            .nav_bar{display: flex; gap: 20px;
+             
+                li{
+                   display: flex; align-items: center; gap: 15px; cursor: pointer;
+                  a{font-size: 16px; line-height: 23px; color: #212121; font-weight: 400; text-transform: capitalize;
+                    &:hover{color:@primary_color;}
+                  }
+                
+                  
+                }
+           }
+           
+         }
+
+         .nav-section-logo{img{width: 80%;}}
+      }
+  
+   
+  }
 
 }
 
 
 @media screen and (min-width: 1280px) and (max-width: 1480px) {
+  .nav-sections{
   
-    
-    
-    .page-header{
-        .nav-section{padding: 20px 30px; gap: 10px; box-sizing: border-box;
+  
+     
+    .navigation{padding: 10px 40px; display: flex; justify-content: space-between; gap: 30px; 
 
-       
-        .nav-section-logo{ text-align: center;img{width: auto;}}
-        .nav-section-right{
-            
-             .nav-section-ctas{ gap: 25px; 
-              
-               .search_field{ gap: 20px; max-width: 200px; width: 100%; 
-                input{    width: calc(100% - 10%);}
-                 
-              }
-            }
-             .navigation{
-                li{
-                    &:first-child{padding-left: 0px;}
-                    &:last-child{padding-right: 20px;}
-                }
+
+
+
+    .nav-section-right{
+
+     
+         .nav-section-ctas{display: flex; align-items: center; gap: 25px; justify-content: end;
+             .sell_car_cta{
+                 .transparent_cta{
+                  min-width: 9em; padding: 6px 15px;font-size: 15px; line-height: 18px;
+                 }
              }
         }
-         .navigation{
-             
-              .nav_bar{display: flex; gap: 25px;
-                  li{
-                    a{font-size: 16px; line-height: 24px;}
-                    &:first-child{padding-left: 20px;}
-                  }
-             }
-             
-           }
-        }
+
     }
-}
 
+    .nav-section-left{
+      .sell_car_cta{ display: none;
 
-
-@media screen and (min-width: 1481px) and (max-width: 1620px)
-{
-  .page-header{
- 
-      .nav-section{ gap: 25px; 
-
-  
-       .navigation{
-       
-            .nav_bar{display: flex; gap: 25px;
-                &.category{display: none;}
-                li{
-                  a{font-size: 20px; line-height: 28px; color: #000000; font-weight: 400; text-transform: uppercase;}
-                  &:first-child{padding-left: 25px;}
-                }
-           }
+    }
+    }
+     .nav-section{
+      .close_side_bar{display: none;}
+          .nav_bar{display: flex; gap: 30px;
            
+
          }
-      }
-  }
+         
+       }
+
+       .nav-section-logo{img{width: 70%;}}
+    }
+
+ 
+}
 }
 
 
-@media screen and (min-width: 1700px) {
-  .page-header {.nav-section {
-          justify-content: center;
-  }
-}
-}
+
+
+
     
