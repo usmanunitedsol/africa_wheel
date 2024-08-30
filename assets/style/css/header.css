@@ -163,6 +163,10 @@
     gap: 0px;
   }
   .nav-sections .navigation .nav-section .nav_bar li {
+<<<<<<< HEAD
+=======
+    align-items: center;
+>>>>>>> beaf0facaf6c0a7d6e9f9b188c77f15cc3d78d85
     gap: 5px;
     cursor: pointer;
     justify-content: space-between;
