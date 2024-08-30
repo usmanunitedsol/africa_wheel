@@ -866,6 +866,7 @@ footer .footer_body .footer_block .footer_title {
   color: #ffffff;
   margin-bottom: 15px;
   letter-spacing: 2.4px;
+  text-transform: uppercase;
 }
 footer .footer_body .footer_block .links .footer_link {
   font-size: 16px;
