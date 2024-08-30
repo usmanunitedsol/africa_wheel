@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
             if (this.config.overlay && !this.overlayElement) {
                 this.overlayElement = document.createElement('div');
                 this.overlayElement.classList.add('pushbar_overlay');
-                document.querySelector('header').appendChild(this.overlayElement);
+                document.querySelector(".nav-sections").appendChild(this.overlayElement);
                 this.overlayElement.addEventListener('click', e => this.handleCloseEvent(e), false);
             }
         }
