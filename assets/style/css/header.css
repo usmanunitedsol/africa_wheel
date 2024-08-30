@@ -6,12 +6,6 @@
 .nav-sections-items {
   background-color: rgba(255, 255, 255, 0.9);
 }
-.nav-sections {
-  z-index: 99;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-}
 .nav-sections .navigation {
   padding: 10px 40px;
   display: flex;
@@ -54,6 +48,9 @@
   color: #E61122;
   font-weight: 500;
 }
+.nav-sections .navigation .nav-section-right .nav-section-ctas .sell_car_cta .transparent_cta:hover {
+  color: #fff;
+}
 .nav-sections .navigation .nav-section-left .sell_car_cta {
   display: none;
 }
@@ -88,6 +85,9 @@
 .nav-sections .navigation .nav-section .nav_bar li:hover svg path {
   fill: #E61122;
 }
+.nav-sections .navigation .nav-section .nav_bar li:hover .first_layer {
+  display: block;
+}
 .nav-sections .navigation .nav-section .nav_bar .first_layer {
   display: none;
   position: absolute;
@@ -97,17 +97,14 @@
   min-width: 10em;
   padding: 15px 20px;
   box-sizing: border-box;
-  background-color: var(--primary_bg);
+  background-color: #ffff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-}
-.nav-sections .navigation .nav-section .nav_bar:hover .first_layer {
-  display: block;
 }
 @media only screen and (max-width: 1024px) {
   .nav-sections .navigation {
     padding: 10px;
-    gap: 20px;
+    gap: 10px;
     box-sizing: border-box;
     align-items: center;
     width: 100%;
@@ -116,10 +113,10 @@
     display: block;
   }
   .nav-sections .navigation .nav-section-logo {
-    text-align: center;
+    text-align: left;
   }
   .nav-sections .navigation .nav-section-logo img {
-    width: 50px;
+    width: 70%;
   }
   .nav-sections .navigation .nav-section-right .nav-section-ctas {
     display: flex;
@@ -136,10 +133,16 @@
     font-size: 16px;
     line-height: 23px;
   }
+  .nav-sections .navigation .nav-section-right .nav-section-ctas .profile {
+    min-width: 22px;
+  }
+  .nav-sections .navigation .nav-section-right .nav-section-ctas .fav {
+    min-width: 22px;
+  }
   .nav-sections .navigation .nav-section-left .sell_car_cta {
     display: block;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .nav-sections .navigation .nav-section-left .sell_car_cta .transparent_cta {
     min-width: 9em;
@@ -147,9 +150,6 @@
     font-size: 15px;
     line-height: 17px;
     border-radius: 5px;
-  }
-  .nav-sections .navigation .nav-section-left .sell_car_cta .transparent_cta:hover {
-    color: #fff;
   }
   .nav-sections .navigation .nav-section .close_side_bar {
     display: block;
@@ -163,19 +163,15 @@
     gap: 0px;
   }
   .nav-sections .navigation .nav-section .nav_bar li {
-<<<<<<< HEAD
-=======
-    align-items: center;
->>>>>>> beaf0facaf6c0a7d6e9f9b188c77f15cc3d78d85
     gap: 5px;
     cursor: pointer;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-block: 10px;
+    padding-block: 7px;
   }
   .nav-sections .navigation .nav-section .nav_bar li a {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 17px;
   }
   .nav-sections .navigation .nav-section .nav_bar .first_layer {
     position: static;
@@ -244,8 +240,11 @@
     font-weight: 400;
     text-transform: capitalize;
   }
-  .nav-sections .navigation .nav-section-logo img {
-    width: 80%;
+  .nav-sections .navigation .nav-section .nav-section-logo {
+    text-align: left;
+  }
+  .nav-sections .navigation .nav-section .nav-section-logo img {
+    width: 90%;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1480px) {
@@ -276,8 +275,5 @@
   .nav-sections .navigation .nav-section .nav_bar {
     display: flex;
     gap: 30px;
-  }
-  .nav-sections .navigation .nav-section-logo img {
-    width: 70%;
   }
 }

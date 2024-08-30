@@ -87,8 +87,8 @@ footer .footer_bottom .bottom_footer p {
     gap: 20px;
   }
   footer .footer_header .title_block h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: 2px;
   }
   footer .footer_header .title_block p {
@@ -102,38 +102,33 @@ footer .footer_bottom .bottom_footer p {
     border-bottom: 0;
   }
   footer .footer_body .footer_block .footer_title {
-<<<<<<< HEAD
-    font-size: 16px;
-=======
-    font-size: 14px;
->>>>>>> beaf0facaf6c0a7d6e9f9b188c77f15cc3d78d85
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 20px;
     margin: 0;
     padding: 15px 0px;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.35);
-    background-image: url("../images/plus-64.webp");
+    background-image: url("../images/chevron-white-up.webp");
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: 98% center;
     letter-spacing: 2px;
   }
+  footer .footer_body .footer_block .footer_title.active_footer {
+    background-image: url(../images/chevron-white-down.webp);
+  }
   footer .footer_body .footer_block .links {
     display: none;
   }
   footer .footer_body .footer_block .links .footer_link {
-<<<<<<< HEAD
-    font-size: 16px;
-=======
     font-size: 14px;
->>>>>>> beaf0facaf6c0a7d6e9f9b188c77f15cc3d78d85
     line-height: 22px;
     display: block;
     padding: 5px 0px;
     transition: 0.3s ease-in-out;
   }
   footer .footer_bottom {
-    width: 100%;
     flex-direction: column;
+    gap: 20px;
     padding: 0 0 20px;
   }
   footer .footer_bottom .social_block {
@@ -143,9 +138,13 @@ footer .footer_bottom .bottom_footer p {
     flex-wrap: wrap;
     grid-gap: 10px;
   }
+  footer .footer_bottom .footer_logo {
+    display: none;
+  }
   footer .footer_bottom .bottom_footer p {
     font-size: 14px;
     line-height: 20px;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -157,6 +156,10 @@ footer .footer_bottom .bottom_footer p {
   footer .footer_header .title_block {
     text-align: left;
   }
+  footer .footer_body .footer_block .footer_title {
+    font-size: 14px;
+    line-height: 22px;
+  }
   footer .footer_bottom {
     flex-direction: row;
   }
@@ -167,7 +170,6 @@ footer .footer_bottom .bottom_footer p {
 @media only screen and (min-width:1025px) and (max-width: 1480px) {
   footer .footer_header {
     gap: 40px;
-    padding: 30px 0;
   }
   footer .footer_header .title_block h2 {
     font-size: 24px;
@@ -177,16 +179,8 @@ footer .footer_bottom .bottom_footer p {
     font-size: 14px;
     line-height: 20px;
   }
-  footer .footer_body {
-    padding: 30px 0;
-    grid-gap: 20px;
-  }
   footer .footer_body .footer_block .footer_title {
-<<<<<<< HEAD
-    font-size: 16px;
-=======
     font-size: 15px;
->>>>>>> beaf0facaf6c0a7d6e9f9b188c77f15cc3d78d85
     line-height: 24px;
     margin-bottom: 10px;
   }
@@ -196,9 +190,6 @@ footer .footer_bottom .bottom_footer p {
     display: block;
     padding: 5px 0px;
     transition: 0.3s ease-in-out;
-  }
-  footer .footer_bottom {
-    width: 100%;
   }
   footer .footer_bottom .bottom_footer p {
     font-size: 15px;
@@ -217,17 +208,6 @@ footer .footer_bottom .bottom_footer p {
   footer .footer_header .title_block p {
     font-size: 18px;
     line-height: 28px;
-  }
-  footer .footer_body {
-    padding: 70px 0px;
-    display: flex;
-    justify-content: space-between;
-    grid-gap: 40px;
-    width: 100%;
-    margin: auto;
-  }
-  footer .footer_bottom {
-    width: 100%;
   }
   footer .footer_bottom .social_block {
     display: flex;

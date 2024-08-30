@@ -7,10 +7,10 @@
 
 .nav-sections{
   // position: relative;
-  z-index: 99; 
-  position: fixed;
-  top: 0px;
-  width: 100%;
+  // z-index: 99; 
+  // position: fixed;
+  // top: 0px;
+  // width: 100%;
 
    
     .navigation{padding: 10px 40px; display: flex; justify-content: space-between; gap: 40px; box-sizing: border-box; align-items: center;
@@ -72,15 +72,15 @@
                   }
                 }
               
-                
+                &:hover{
+                  .first_layer {
+                    display: block;
+                }
+                 }
               }
-            .first_layer { display: none; position: absolute; z-index: 10; left: 0px; top: 100%; min-width: 10em; padding: 15px 20px; box-sizing: border-box; background-color: var(--primary_bg); border-radius: 10px; box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%); }
+            .first_layer { display: none; position: absolute; z-index: 10; left: 0px; top: 100%; min-width: 10em; padding: 15px 20px; box-sizing: border-box; background-color:#ffff; border-radius: 10px; box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%); }
 
-           &:hover{
-            .first_layer {
-              display: block;
-          }
-           }
+         
          }
          
        }
