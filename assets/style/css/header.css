@@ -31,11 +31,7 @@
   justify-content: space-between;
   gap: 40px;
 }
-<<<<<<< HEAD
 .nav-sections .navigation .nav-section-left .nav_bar {
-=======
-.page-header .nav-section .nav-section-left .nav_bar {
->>>>>>> 329a3f210dd45410b93d3e0c07d9cc786106bf6f
   justify-content: center;
 }
 .nav-sections .navigation .res_mobile {
@@ -68,12 +64,16 @@
   display: flex;
   gap: 45px;
 }
+.nav-sections .navigation .nav-section .nav_bar .drop_icon {
+  padding-bottom: 2px;
+}
 .nav-sections .navigation .nav-section .nav_bar li {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  align-items: flex-end;
+  gap: 10px;
   cursor: pointer;
   position: relative;
+  padding-block: 10px;
 }
 .nav-sections .navigation .nav-section .nav_bar li a {
   font-size: 18px;
@@ -82,18 +82,18 @@
   font-weight: 400;
   text-transform: capitalize;
 }
-.nav-sections .navigation .nav-section .nav_bar li a:hover {
+.nav-sections .navigation .nav-section .nav_bar li:hover > a {
   color: #E61122;
 }
-.nav-sections .navigation .nav-section .nav_bar li:hover svg {
-  color: #E61122;
+.nav-sections .navigation .nav-section .nav_bar li:hover svg path {
+  fill: #E61122;
 }
 .nav-sections .navigation .nav-section .nav_bar .first_layer {
   display: none;
   position: absolute;
   z-index: 10;
   left: 0px;
-  top: 50px;
+  top: 100%;
   min-width: 10em;
   padding: 15px 20px;
   box-sizing: border-box;
@@ -138,7 +138,7 @@
   }
   .nav-sections .navigation .nav-section-left .sell_car_cta {
     display: block;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
   }
   .nav-sections .navigation .nav-section-left .sell_car_cta .transparent_cta {
@@ -146,6 +146,10 @@
     padding: 6px 15px;
     font-size: 15px;
     line-height: 17px;
+    border-radius: 5px;
+  }
+  .nav-sections .navigation .nav-section-left .sell_car_cta .transparent_cta:hover {
+    color: #fff;
   }
   .nav-sections .navigation .nav-section .close_side_bar {
     display: block;
@@ -156,20 +160,22 @@
   }
   .nav-sections .navigation .nav-section .nav_bar {
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
   }
   .nav-sections .navigation .nav-section .nav_bar li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    gap: 5px;
     cursor: pointer;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: 10px;
   }
   .nav-sections .navigation .nav-section .nav_bar li a {
     font-size: 16px;
     line-height: 24px;
   }
-  .nav-sections .navigation .nav-section .nav_bar li a:hover {
-    color: #00397B;
+  .nav-sections .navigation .nav-section .nav_bar .first_layer {
+    position: static;
+    min-width: 100%;
   }
   .nav-sections .navigation .nav-section .nav_bar .drop_icon {
     position: relative;
@@ -224,8 +230,7 @@
   }
   .nav-sections .navigation .nav-section .nav_bar li {
     display: flex;
-    align-items: center;
-    gap: 15px;
+    gap: 10px;
     cursor: pointer;
   }
   .nav-sections .navigation .nav-section .nav_bar li a {
@@ -234,9 +239,6 @@
     color: #212121;
     font-weight: 400;
     text-transform: capitalize;
-  }
-  .nav-sections .navigation .nav-section .nav_bar li a:hover {
-    color: #00397B;
   }
   .nav-sections .navigation .nav-section-logo img {
     width: 80%;
