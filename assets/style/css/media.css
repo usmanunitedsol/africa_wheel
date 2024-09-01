@@ -355,7 +355,7 @@ body {
   }
 }
 .main_container {
-  max-width: 1600px;
+  max-width: 1430px;
   margin: auto;
   padding: 0px 30px;
   box-sizing: border-box;
@@ -372,6 +372,9 @@ body {
 }
 .primarybg {
   background-color: #ECF4FF;
+}
+.section_blue {
+  background-color: #03254c;
 }
 @media only screen and (max-width: 1024px) {
   .section_padding {
@@ -992,6 +995,175 @@ footer .footer_bottom .bottom_footer p {
     padding-left: 0px;
     box-sizing: border-box;
   }
+  .sell_Car > .primary_title {
+    padding-bottom: 20px;
+    text-transform: capitalize;
+  }
+  .post_Card {
+    padding: 20px;
+  }
+  .post_Card ul li {
+    color: #5A5A5A;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .post_Card.blue_card h3 {
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 15px;
+  }
+  .post_Card.blue_card .cta_block img {
+    width: 80px;
+  }
+  .post_Card.yellow_card {
+    background-color: rgba(248, 206, 98, 0.14);
+  }
+  .post_Card.yellow_card h3 {
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 15px;
+  }
+  .post_Card.yellow_card .cta_block {
+    min-height: 112px;
+  }
+  .post_Card.yellow_card .cta_block img {
+    width: 80px;
+  }
+  .post_Card.yellow_card .cta_block .primary_cta {
+    background-color: #e3a400;
+    border-color: #e3a400;
+    color: #fff;
+  }
+  .two_column_block {
+    flex-direction: column;
+  }
+  .two_column_block .column {
+    flex: unset;
+    width: 100%;
+  }
+  .home_slider_block {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .home_slider_block .primary_title {
+    padding-bottom: 10px;
+  }
+  .home_slider_block > .primary_text {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .home_slider_block .swiper-slide {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+  }
+  .home_slider_block .slider_tabs {
+    padding-bottom: 20px;
+    gap: 15px;
+    justify-content: start;
+    overflow-x: auto;
+  }
+  .home_slider_block .slider_tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .home_slider_block .slider_tabs .transparent_cta {
+    min-width: 8em;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 14px;
+    line-height: 13px;
+  }
+  .home_slider_block .swiper-wrapper {
+    padding-bottom: 30px;
+  }
+  .img_card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+  }
+  .top_cnt_view a.primary_text {
+    color: #000000;
+    font-weight: 500;
+  }
+  .top_cnt_view a.primary_text::after {
+    content: url("../images/black_arrow.webp");
+    margin-left: 10px;
+    margin-bottom: 2px;
+  }
+  .home_explore .explore_tabs {
+    margin-bottom: 20px;
+  }
+  .home_explore .swiper-wrapper {
+    padding-bottom: 30px;
+  }
+  .home_explore.blue_bg {
+    background-color: #ecf4ff;
+  }
+  .vehicles_card .img_block {
+    position: relative;
+  }
+  .vehicles_card .img_block .pro_img {
+    width: 100%;
+    object-fit: fill;
+  }
+  .vehicles_card .img_block .icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .vehicles_card .img_block .img_cta {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #e3a400;
+    border-color: #e3a400;
+    min-width: 6em;
+  }
+  .vehicles_card .cnt_block {
+    padding: 20px;
+  }
+  .vehicles_card .cnt_block .cnt_title {
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-weight: 500;
+  }
+  .vehicles_card .cnt_block .price_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .vehicles_card .cnt_block .price_block .view_detail {
+    font-size: 14px;
+    line-height: 23px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .vehicles_card .cnt_block .price_block .view_detail::after {
+    content: url("../images/cta_arrow.webp");
+    margin-left: 10px;
+  }
+  .vehicles_card .cnt_block .price_block .price {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .main_banner .banner_content {
@@ -1059,6 +1231,22 @@ footer .footer_bottom .bottom_footer p {
     font-size: 17px;
     line-height: 22px;
   }
+  .post_Card {
+    padding: 15px;
+  }
+  .post_Card h3 {
+    min-width: 48px;
+  }
+  .post_Card ul {
+    min-height: 105px;
+  }
+  .two_column_block {
+    flex-direction: row;
+  }
+  .two_column_block .column {
+    flex: 1;
+    width: 100%;
+  }
 }
 @media only screen and (min-width:1025px) and (max-width: 1480px) {
   .main_banner {
@@ -1109,5 +1297,71 @@ footer .footer_bottom .bottom_footer p {
     background: transparent;
     color: #fff;
     border-color: #fff;
+  }
+  .sell_Car > .primary_title {
+    padding-bottom: 30px;
+    text-transform: capitalize;
+  }
+  .post_Card {
+    padding: 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  .post_Card ul li {
+    color: #5A5A5A;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 6px;
+  }
+  .post_Card.blue_card {
+    background-color: #ECF4FF;
+  }
+  .post_Card.blue_card h3 {
+    font-size: 30px;
+    line-height: 38px;
+    color: #00397B;
+    font-weight: 700;
+    padding-bottom: 20px;
+    min-height: 80px;
+  }
+  .post_Card.yellow_card {
+    background-color: rgba(248, 206, 98, 0.14);
+  }
+  .post_Card.yellow_card h3 {
+    font-size: 30px;
+    line-height: 38px;
+    color: #d39904;
+    font-weight: 700;
+    padding-bottom: 20px;
+    min-height: 80px;
+  }
+  .two_column_block {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1480px) {
+  .post_Card.blue_card {
+    background-color: #ECF4FF;
+  }
+  .post_Card.blue_card h3 {
+    font-size: 30px;
+    line-height: 38px;
+    color: #00397B;
+    font-weight: 700;
+    padding-bottom: 20px;
+    min-height: 0px;
+  }
+  .post_Card.yellow_card {
+    background-color: rgba(248, 206, 98, 0.14);
+  }
+  .post_Card.yellow_card h3 {
+    font-size: 30px;
+    line-height: 38px;
+    color: #d39904;
+    font-weight: 700;
+    padding-bottom: 20px;
+    min-height: 0px;
   }
 }

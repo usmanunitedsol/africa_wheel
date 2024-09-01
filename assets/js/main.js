@@ -66,7 +66,7 @@
 // window.addEventListener('scroll', throttle(handleScroll, 0));
 
 
-// $('.swiper-container').each(function(index) {
+// $('.vehicles-slider').each(function(index) {
 //     var $this = $(this);
 //     var sliderId = $this.data('slider-id');
 

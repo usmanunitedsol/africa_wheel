@@ -80,6 +80,132 @@
 
 //select styling
 select{border:0px; background-color: transparent; font-size: 14px; line-height: 18px; color:  #050B20; font-weight: 400;  outline: none;    font-family: 'Helvetica Now Display'; appearance: none; background-image: url("../images/select.png"); background-repeat: no-repeat; background-position: 98% center; background-size: 10px;    padding-right: 0px;padding-left: 0px; box-sizing: border-box;}
+
+
+.sell_Car{
+    > .primary_title{padding-bottom: 20px; text-transform: capitalize;}
+}
+
+// post card
+.post_Card{
+   padding: 20px;  
+   
+    ul{
+        li{color: #5A5A5A; font-size: 14px; line-height: 22px;}
+    }
+ 
+
+    &.blue_card{
+    
+        h3{font-size: 20px; line-height: 32px; padding-bottom: 15px; }
+
+        .cta_block{
+            img{width: 80px;}
+        }
+
+    }
+    &.yellow_card{
+        background-color:  rgba(248, 206, 98, 0.14); 
+        h3{font-size: 20px; line-height: 32px; padding-bottom: 15px; }
+
+        .cta_block{
+             min-height: 112px;
+             img{width: 80px;}
+            .primary_cta{ background-color: rgba(227, 164, 0, 1); border-color: rgba(227, 164, 0, 1); color: #fff;} 
+        }
+    }
+}
+
+
+//two column block
+.two_column_block{
+    flex-direction: column;
+     .column{flex: unset; width: 100%;}
+}
+
+
+//home slider styling
+
+.home_slider_block{
+    background-color: #fff;
+    border-radius: 10px; padding: 20px; box-sizing: border-box;
+
+    .primary_title{padding-bottom: 10px;}
+  >  .primary_text{text-align: center; padding-bottom: 20px;}
+.swiper-slide { display: grid; grid-template-columns: repeat(auto-fill,minmax(180px,1fr)); gap: 20px; }
+.slider_tabs{padding-bottom: 20px; gap: 15px; justify-content: start; overflow-x: auto;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    .transparent_cta{min-width: 8em; border-radius: 20px; color:rgba(0, 0, 0, 1); font-size: 14px; line-height: 13px;
+  
+    }
+}
+
+.swiper-wrapper{padding-bottom: 30px;
+}
+
+}
+
+.img_card { background-color: white; border: 1px solid #ddd; border-radius: 8px; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); flex-direction: column; gap: 8px; padding: 20px; }
+
+
+
+.top_cnt_view{
+
+    a{ 
+        &.primary_text{
+            color: rgba(0, 0, 0, 1);  font-weight: 500;
+            &::after{
+                content:  url("../images/black_arrow.webp"); margin-left: 10px; margin-bottom: 2px;
+            }
+        }
+    }
+}
+
+.home_explore{
+    .explore_tabs {
+ 
+        margin-bottom: 20px;
+      
+       
+    }
+    .swiper-wrapper{padding-bottom: 30px;
+    }
+    
+    &.blue_bg{
+   background-color: rgba(236, 244, 255, 1);
+    }
+}
+
+
+.vehicles_card{
+
+     .img_block{
+         position: relative;
+          .pro_img{width: 100%; object-fit: fill;}
+          .icon{position: absolute; top: 10px; right:10px}
+          .img_cta{position: absolute; top: 10px; left: 10px; font-size: 14px; line-height: 18px; color: #fff; border-radius: 50px; background-color: rgba(227, 164, 0, 1); border-color:rgba(227, 164, 0, 1); min-width: 6em;}
+     }
+     .cnt_block{
+        padding: 20px;
+         .cnt_title{font-size: 18px; line-height: 28px; padding-bottom: 20px; color: #fff; font-weight: 500;}
+      
+
+        .price_block{display: flex; justify-content: space-between; align-items: center; padding-top: 20px;
+           .view_detail{font-size: 14px; line-height: 23px; color: 
+            rgba(255, 255, 255, 1); font-weight: 500;
+            &::after{
+                content:  url("../images/cta_arrow.webp"); margin-left: 10px;
+            }
+        }
+            .price{font-size: 16px; line-height: 24px; font-weight: 700; color: #fff;}
+        }
+     }
+}
+
+
+
 }
 
 
@@ -139,6 +265,28 @@ select{border:0px; background-color: transparent; font-size: 14px; line-height: 
 
 //select styling
 select{border:0px; background-color: transparent; font-size: 17px; line-height: 22px;}
+
+
+
+// post card
+.post_Card{
+   padding: 15px;  
+
+   h3{min-width: 48px;}
+   
+   ul{
+     min-height: 105px;
+   }
+  
+
+}
+
+
+//two column block
+.two_column_block{
+    flex-direction: row;
+     .column{flex: 1; width: 100%;}
+}
 }
 
 
@@ -189,4 +337,58 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
 
 }
 
+
+//sell car styling
+
+.sell_Car{
+    > .primary_title{padding-bottom: 30px; text-transform: capitalize;}
+}
+
+// post card
+.post_Card{
+   padding: 40px;  border-radius: 10px; box-sizing: border-box;
+   
+    ul{
+        li{color: #5A5A5A; font-size: 16px; line-height: 24px; padding-bottom: 6px;}
+    }
+ 
+
+    &.blue_card{
+        background-color: #ECF4FF; 
+        h3{font-size: 30px; line-height: 38px; color: #00397B; font-weight: 700; padding-bottom: 20px; min-height: 80px; }
+
+    }
+    &.yellow_card{
+        background-color:  rgba(248, 206, 98, 0.14); 
+        h3{font-size: 30px; line-height: 38px; color: rgba(211, 153, 4, 1); font-weight: 700; padding-bottom: 20px; min-height: 80px; }
+  
+ 
+    }
+}
+
+
+//two column block
+.two_column_block{
+    display: flex; gap: 20px;  align-items: center;
+ 
+}
+
+}
+
+@media screen and (min-width:1280px) and (max-width:1480px) {
+    // post card
+.post_Card{
+
+     &.blue_card{
+         background-color: #ECF4FF; 
+         h3{font-size: 30px; line-height: 38px; color: #00397B; font-weight: 700; padding-bottom: 20px; min-height: 0px; }
+ 
+     }
+     &.yellow_card{
+         background-color:  rgba(248, 206, 98, 0.14); 
+         h3{font-size: 30px; line-height: 38px; color: rgba(211, 153, 4, 1); font-weight: 700; padding-bottom: 20px; min-height: 0px; }
+   
+  
+     }
+ }
 }

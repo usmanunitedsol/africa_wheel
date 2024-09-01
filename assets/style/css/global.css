@@ -355,7 +355,7 @@ body {
   }
 }
 .main_container {
-  max-width: 1600px;
+  max-width: 1430px;
   margin: auto;
   padding: 0px 30px;
   box-sizing: border-box;
@@ -372,6 +372,9 @@ body {
 }
 .primarybg {
   background-color: #ECF4FF;
+}
+.section_blue {
+  background-color: #03254c;
 }
 @media only screen and (max-width: 1024px) {
   .section_padding {
