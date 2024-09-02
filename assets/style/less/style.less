@@ -164,9 +164,11 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
     }
 }
 
-.swiper-wrapper{padding-bottom: 40px;
+
+
 }
 
+.swiper-wrapper{padding-bottom: 40px;
 }
 
 .swiper-pagination-bullets{position: static;
@@ -179,10 +181,13 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
 
 .img_card { background-color: white; border: 1px solid #ddd; border-radius: 8px; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); flex-direction: column; gap: 8px; padding: 45px;
 
+    h3{color: rgba(0, 2, 55, 1); font-size: 22px; line-height: 30px; font-weight: 700; text-align: center;}
   p{
    color:rgba(0, 0, 0, 1);font-size: 16px; line-height: 24px; font-weight: 500;
 
   }
+
+ 
 }
 
 
@@ -191,6 +196,7 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 40px;
     a{ 
         &.primary_text{
             color: rgba(0, 0, 0, 1);  font-weight: 500;
@@ -199,6 +205,7 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
             }
         }
     }
+    .primary_title{padding-bottom: 0px; text-transform: capitalize;}
 }
 
 .home_explore{
@@ -233,6 +240,37 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
     &.blue_bg{
    background-color: rgba(236, 244, 255, 1);
     }
+    &.grey_bg{
+      background-color: rgba(244, 244, 244, 1);
+
+
+    }
+
+    &.dark_grey{
+   background-color: rgba(63, 63, 63, 1);
+     .top_cnt_view{
+        a{
+            &.primary_text {color: #ffff;
+                &::after{
+                    content:  url("../images/cta_arrow.webp"); margin-left: 10px;
+                }
+            }
+        }
+        .primary_title{color: #fff;}
+     }
+     .explore_tabs{
+        .tab{color: #ffff;}
+     }
+
+     .swiper-pagination-bullets{position: static;
+ 
+        .swiper-pagination-bullet {    background: transparent;
+         border: 1px solid  rgba(255, 255, 255, 1);
+               &.swiper-pagination-bullet-active{background:  
+                rgba(255, 255, 255, 1)}
+     }
+     }
+    }
 }
 
 
@@ -265,6 +303,94 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
             .price{font-size: 20px; line-height: 28px; font-weight: 700; color: #fff;}
         }
      }
+
+     &.dark_grey{ background-color: rgba(63, 63, 63, 1); }
+     &.white_bg{background-color: #fff;
+       .cnt_block{
+           .cnt_title{color: rgba(5, 11, 32, 1)}
+           .icon{
+              p{color: rgba(102, 102, 102, 1);}
+           }
+           .price_block{
+            .price{color: rgba(34, 34, 34, 1);}
+                .view_detail{color: rgba(0, 102, 204, 1);
+                    &::after{
+                        content:  url("../images/blue_arrow.webp"); margin-left: 10px;
+                    }
+                }
+           }
+       }
+    }
 }
 
 
+
+// africa_whell_home
+
+.africa_whell_home{
+    .top_cnt_view{padding-bottom: 50px;
+    h2{color: rgba(20, 22, 82, 1);}}
+    .img_card{
+         p{ color: rgba(126, 126, 126, 1); width: 70%; margin: auto; text-align: center; }
+
+
+         &:hover{
+            border-color: @red_color;
+         }
+    }
+}
+
+
+
+//car comparison
+
+.home_car_comparison{
+      background-color: rgba(228, 239, 255, 0.5); padding: 100px; border-radius: 10px;text-align: center; background-image: url(../images/left_Car.webp), url(../images/right_Car.webp); background-position: left center, right center; background-repeat: no-repeat, no-repeat; background-size: 250px, 250px;    
+        h2{font-size: 45px; line-height: 56px; color:  rgba(0, 4, 13, 1); padding-block: 20px; width: 60%; margin: auto;}
+        p{font-size: 21px; line-height: 30px; color:  rgba(29, 29, 31, 1); padding-bottom: 20px; }
+        .primary_cta{min-width: 14em;}
+    }
+
+
+//blog section    
+.blog_home{
+     .top_cnt_view{
+         .primary_title{color: #141652;}
+     }
+}
+
+//blog_Card 
+.blog_Card{
+    background-color: #F1F7FF; border-radius: 24px;
+     .blog_img{img{width: 100%;}}
+    .blog_cnt{
+        padding: 25px; 
+        .block_read{display: flex; gap: 20px; align-items: center;font-size: 14px; line-height: 20px;
+            padding-bottom: 15px;
+          a{background-color: #CEE4FE;  color: #000; padding: 6px; border-radius: 5px; font-weight: 500;}
+          span{
+            color: #8C8C8C;
+          }
+         
+        }
+      >  a{
+           font-size: 24px; line-height: 32px;margin-bottom: 8px;  font-weight: 700; color: rgba(0, 0, 0, 1); 
+           display: -webkit-box;
+           -webkit-line-clamp: 1;
+           -webkit-box-orient: vertical;  
+           overflow: hidden; 
+        }
+        p{color: #8C8C8C; margin-bottom: 14px;font-size: 16px; line-height: 24px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+       .read_cta{
+            color: #0066CC; font-size: 16px; line-height: 24px; font-weight: 500;
+            &::after{
+                content:  url("../images/blue_arrow.webp"); margin-left: 10px;
+            }
+        }
+    }
+}

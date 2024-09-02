@@ -192,23 +192,21 @@ body{
 
 
 
+
 .flex(@justify, @align, @gap) { display: flex; justify-content: @justify; align-items: @align; gap: @gap; }
 .grid(@gridColumn, @gap){display: grid; grid-template-columns: @gridColumn; grid-gap: @gap;}
 
 
 
 .grid3(){
-	display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); grid-row-gap: 45px; grid-column-gap: 35px;
+	display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 30px;
 	@media @media-query-base{
-		grid-template-columns: repeat(auto-fill,minmax(140px, 1fr));
-    grid-row-gap: 30px;
-    grid-column-gap: 25px;
+		grid-template-columns: repeat(auto-fill,minmax(180px, 1fr));
+   gap: 15px;
 	}
-  @media  screen and (min-width:650px) and (max-width:768px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+
   @media @media-query-tablet{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 	@media @media-query-mediumDesktop{
 		grid-template-columns: repeat(3, 1fr);
@@ -248,7 +246,7 @@ body{
 .primarybg{background-color: @primary_bg;}
 .section_blue{background-color:
   rgba(3, 37, 76, 1);}
-
+.light_blue{background-color: #F1F7FF;}
 
 
 @media @media-query-base{

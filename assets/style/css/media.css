@@ -270,24 +270,17 @@ body {
 .grid_3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0px, 1fr));
-  grid-row-gap: 45px;
-  grid-column-gap: 35px;
+  gap: 30px;
 }
 @media only screen and (max-width: 1024px) {
   .grid_3 {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    grid-row-gap: 30px;
-    grid-column-gap: 25px;
-  }
-}
-@media screen and (min-width: 650px) and (max-width: 768px) {
-  .grid_3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .grid_3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (min-width:1025px) and (max-width: 1480px) {
@@ -375,6 +368,9 @@ body {
 }
 .section_blue {
   background-color: #03254c;
+}
+.light_blue {
+  background-color: #F1F7FF;
 }
 @media only screen and (max-width: 1024px) {
   .section_padding {
@@ -1056,7 +1052,7 @@ footer .footer_bottom .bottom_footer p {
   }
   .home_slider_block .swiper-slide {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 20px;
   }
   .home_slider_block .slider_tabs {
@@ -1089,6 +1085,13 @@ footer .footer_bottom .bottom_footer p {
     flex-direction: column;
     gap: 8px;
     padding: 20px;
+  }
+  .img_card h3 {
+    font-size: 17px;
+    line-height: 28px;
+  }
+  .top_cnt_view {
+    padding-bottom: 20px;
   }
   .top_cnt_view a.primary_text {
     color: #000000;
@@ -1163,6 +1166,49 @@ footer .footer_bottom .bottom_footer p {
     line-height: 24px;
     font-weight: 700;
     color: #fff;
+  }
+  .home_car_comparison {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-image: none;
+  }
+  .home_car_comparison h2 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #00040d;
+    padding-block: 10px;
+    width: 100%;
+    margin: auto;
+  }
+  .home_car_comparison p {
+    font-size: 17px;
+    line-height: 28px;
+    color: #1d1d1f;
+    padding-bottom: 10px;
+  }
+  .home_car_comparison .primary_cta {
+    min-width: 9em;
+  }
+  .blog_Card .blog_cnt {
+    padding: 15px;
+  }
+  .blog_Card .blog_cnt > a {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 5px;
+  }
+  .blog_Card .blog_cnt p {
+    color: #8C8C8C;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .blog_Card .blog_cnt .read_cta {
+    color: #0066CC;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1246,6 +1292,20 @@ footer .footer_bottom .bottom_footer p {
   .two_column_block .column {
     flex: 1;
     width: 100%;
+  }
+  .home_car_comparison {
+    background-color: rgba(228, 239, 255, 0.5);
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+    background-image: url(../images/left_Car.webp), url(../images/right_Car.webp);
+    background-position: left center, right center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px, 200px;
+  }
+  .home_car_comparison h2 {
+    width: 60%;
+    margin: auto;
   }
 }
 @media only screen and (min-width:1025px) and (max-width: 1480px) {
@@ -1339,6 +1399,29 @@ footer .footer_bottom .bottom_footer p {
     display: flex;
     gap: 20px;
     align-items: center;
+  }
+  .home_car_comparison {
+    padding: 80px;
+    border-radius: 10px;
+    text-align: center;
+    background-size: 230px, 230px;
+  }
+  .home_car_comparison h2 {
+    font-size: 35px;
+    line-height: 46px;
+    color: #00040d;
+    padding-block: 20px;
+    width: 60%;
+    margin: auto;
+  }
+  .home_car_comparison p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1d1d1f;
+    padding-bottom: 20px;
+  }
+  .home_car_comparison .primary_cta {
+    min-width: 14em;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1480px) {

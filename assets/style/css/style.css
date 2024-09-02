@@ -270,24 +270,17 @@ body {
 .grid_3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0px, 1fr));
-  grid-row-gap: 45px;
-  grid-column-gap: 35px;
+  gap: 30px;
 }
 @media only screen and (max-width: 1024px) {
   .grid_3 {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    grid-row-gap: 30px;
-    grid-column-gap: 25px;
-  }
-}
-@media screen and (min-width: 650px) and (max-width: 768px) {
-  .grid_3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .grid_3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (min-width:1025px) and (max-width: 1480px) {
@@ -375,6 +368,9 @@ body {
 }
 .section_blue {
   background-color: #03254c;
+}
+.light_blue {
+  background-color: #F1F7FF;
 }
 @media only screen and (max-width: 1024px) {
   .section_padding {
@@ -1136,7 +1132,7 @@ select {
   color: #fff;
   border-color: #00397B;
 }
-.home_slider_block .swiper-wrapper {
+.swiper-wrapper {
   padding-bottom: 40px;
 }
 .swiper-pagination-bullets {
@@ -1161,6 +1157,13 @@ select {
   gap: 8px;
   padding: 45px;
 }
+.img_card h3 {
+  color: #000237;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
 .img_card p {
   color: #000000;
   font-size: 16px;
@@ -1171,6 +1174,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 40px;
 }
 .top_cnt_view a.primary_text {
   color: #000000;
@@ -1180,6 +1184,10 @@ select {
   content: url("../images/black_arrow.webp");
   margin-left: 10px;
   margin-bottom: 2px;
+}
+.top_cnt_view .primary_title {
+  padding-bottom: 0px;
+  text-transform: capitalize;
 }
 .home_explore .explore_tabs {
   display: flex;
@@ -1208,6 +1216,35 @@ select {
 }
 .home_explore.blue_bg {
   background-color: #ecf4ff;
+}
+.home_explore.grey_bg {
+  background-color: #f4f4f4;
+}
+.home_explore.dark_grey {
+  background-color: #3f3f3f;
+}
+.home_explore.dark_grey .top_cnt_view a.primary_text {
+  color: #ffff;
+}
+.home_explore.dark_grey .top_cnt_view a.primary_text::after {
+  content: url("../images/cta_arrow.webp");
+  margin-left: 10px;
+}
+.home_explore.dark_grey .top_cnt_view .primary_title {
+  color: #fff;
+}
+.home_explore.dark_grey .explore_tabs .tab {
+  color: #ffff;
+}
+.home_explore.dark_grey .swiper-pagination-bullets {
+  position: static;
+}
+.home_explore.dark_grey .swiper-pagination-bullets .swiper-pagination-bullet {
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+.home_explore.dark_grey .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #ffffff;
 }
 .vehicles_card {
   background-color: #03254c;
@@ -1283,4 +1320,130 @@ select {
   line-height: 28px;
   font-weight: 700;
   color: #fff;
+}
+.vehicles_card.dark_grey {
+  background-color: #3f3f3f;
+}
+.vehicles_card.white_bg {
+  background-color: #fff;
+}
+.vehicles_card.white_bg .cnt_block .cnt_title {
+  color: #050b20;
+}
+.vehicles_card.white_bg .cnt_block .icon p {
+  color: #666666;
+}
+.vehicles_card.white_bg .cnt_block .price_block .price {
+  color: #222222;
+}
+.vehicles_card.white_bg .cnt_block .price_block .view_detail {
+  color: #0066cc;
+}
+.vehicles_card.white_bg .cnt_block .price_block .view_detail::after {
+  content: url("../images/blue_arrow.webp");
+  margin-left: 10px;
+}
+.africa_whell_home .top_cnt_view {
+  padding-bottom: 50px;
+}
+.africa_whell_home .top_cnt_view h2 {
+  color: #141652;
+}
+.africa_whell_home .img_card p {
+  color: #7e7e7e;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.africa_whell_home .img_card:hover {
+  border-color: #E61122;
+}
+.home_car_comparison {
+  background-color: rgba(228, 239, 255, 0.5);
+  padding: 100px;
+  border-radius: 10px;
+  text-align: center;
+  background-image: url(../images/left_Car.webp), url(../images/right_Car.webp);
+  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 250px, 250px;
+}
+.home_car_comparison h2 {
+  font-size: 45px;
+  line-height: 56px;
+  color: #00040d;
+  padding-block: 20px;
+  width: 60%;
+  margin: auto;
+}
+.home_car_comparison p {
+  font-size: 21px;
+  line-height: 30px;
+  color: #1d1d1f;
+  padding-bottom: 20px;
+}
+.home_car_comparison .primary_cta {
+  min-width: 14em;
+}
+.blog_home .top_cnt_view .primary_title {
+  color: #141652;
+}
+.blog_Card {
+  background-color: #F1F7FF;
+  border-radius: 24px;
+}
+.blog_Card .blog_img img {
+  width: 100%;
+}
+.blog_Card .blog_cnt {
+  padding: 25px;
+}
+.blog_Card .blog_cnt .block_read {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+.blog_Card .blog_cnt .block_read a {
+  background-color: #CEE4FE;
+  color: #000;
+  padding: 6px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.blog_Card .blog_cnt .block_read span {
+  color: #8C8C8C;
+}
+.blog_Card .blog_cnt > a {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #000000;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog_Card .blog_cnt p {
+  color: #8C8C8C;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog_Card .blog_cnt .read_cta {
+  color: #0066CC;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.blog_Card .blog_cnt .read_cta::after {
+  content: url("../images/blue_arrow.webp");
+  margin-left: 10px;
 }
