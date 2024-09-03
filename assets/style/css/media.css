@@ -887,48 +887,48 @@ footer .footer_bottom .bottom_footer p {
   }
 }
 @media only screen and (max-width: 1024px) {
-  .main_banner {
+  .page-layout-1column .columns .column.main .main_banner {
     position: relative;
   }
-  .main_banner img {
+  .page-layout-1column .columns .column.main .main_banner img {
     width: 100%;
   }
-  .main_banner .banner_inner {
+  .page-layout-1column .columns .column.main .main_banner .banner_inner {
     position: absolute;
     top: 50%;
     left: 0px;
     width: 100%;
     transform: translateY(-50%);
   }
-  .main_banner .banner_block {
+  .page-layout-1column .columns .column.main .main_banner .banner_block {
     max-width: 1600px;
     margin: auto;
     padding: 0px 25px;
     box-sizing: border-box;
   }
-  .main_banner .banner_content {
+  .page-layout-1column .columns .column.main .main_banner .banner_content {
     max-width: 100%;
     border-radius: 10px;
     box-sizing: border-box;
     margin: auto;
   }
-  .main_banner .banner_content h1 {
+  .page-layout-1column .columns .column.main .main_banner .banner_content h1 {
     color: #FFF;
     text-align: center;
     font-size: 24px;
     line-height: 33px;
     padding-bottom: 5px;
   }
-  .main_banner .banner_content p {
+  .page-layout-1column .columns .column.main .main_banner .banner_content p {
     display: none;
   }
-  .main_banner .banner_content .nav-tabs {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .nav-tabs {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
     gap: 10px;
   }
-  .main_banner .banner_content .search-container {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container {
     background-color: white;
     padding: 15px;
     border-radius: 10px;
@@ -939,15 +939,15 @@ footer .footer_bottom .bottom_footer p {
     flex-wrap: wrap;
     box-sizing: border-box;
   }
-  .main_banner .banner_content .search-container .primary_cta {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container .primary_cta {
     min-width: 9em;
     justify-content: center;
   }
-  .main_banner .banner_content .search-container .primary_cta:hover {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container .primary_cta:hover {
     background-color: #00397B;
     color: #fff;
   }
-  .main_banner .banner_content .search-container select {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container select {
     margin: 5px;
     border: 0px;
     outline: none;
@@ -955,25 +955,25 @@ footer .footer_bottom .bottom_footer p {
     flex: 1;
     background-position: 92% center;
   }
-  .main_banner .banner_content .search-container select:nth-child(2) {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container select:nth-child(2) {
     border-inline: 0px solid #e5e5e5;
     border-radius: 0px;
   }
-  .main_banner .banner_content .search-container .advance-filter {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container .advance-filter {
     margin-top: 10px;
     color: white;
     text-decoration: underline;
     cursor: pointer;
   }
-  .main_banner .banner_content .banner_cta_block {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .banner_cta_block {
     padding-top: 15px;
   }
-  .main_banner .banner_content .banner_cta_block .primary_cta.banner_cta {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .banner_cta_block .primary_cta.banner_cta {
     background: transparent;
     color: #fff;
     border-color: #fff;
   }
-  select {
+  .page-layout-1column .columns .column.main select {
     border: 0px;
     background-color: transparent;
     font-size: 14px;
@@ -991,90 +991,90 @@ footer .footer_bottom .bottom_footer p {
     padding-left: 0px;
     box-sizing: border-box;
   }
-  .sell_Car > .primary_title {
+  .page-layout-1column .columns .column.main .sell_Car > .primary_title {
     padding-bottom: 20px;
     text-transform: capitalize;
   }
-  .post_Card {
+  .page-layout-1column .columns .column.main .post_Card {
     padding: 20px;
   }
-  .post_Card ul li {
+  .page-layout-1column .columns .column.main .post_Card ul li {
     color: #5A5A5A;
     font-size: 14px;
     line-height: 22px;
   }
-  .post_Card.blue_card h3 {
+  .page-layout-1column .columns .column.main .post_Card.blue_card h3 {
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 15px;
   }
-  .post_Card.blue_card .cta_block img {
+  .page-layout-1column .columns .column.main .post_Card.blue_card .cta_block img {
     width: 80px;
   }
-  .post_Card.yellow_card {
+  .page-layout-1column .columns .column.main .post_Card.yellow_card {
     background-color: rgba(248, 206, 98, 0.14);
   }
-  .post_Card.yellow_card h3 {
+  .page-layout-1column .columns .column.main .post_Card.yellow_card h3 {
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 15px;
   }
-  .post_Card.yellow_card .cta_block {
+  .page-layout-1column .columns .column.main .post_Card.yellow_card .cta_block {
     min-height: 112px;
   }
-  .post_Card.yellow_card .cta_block img {
+  .page-layout-1column .columns .column.main .post_Card.yellow_card .cta_block img {
     width: 80px;
   }
-  .post_Card.yellow_card .cta_block .primary_cta {
+  .page-layout-1column .columns .column.main .post_Card.yellow_card .cta_block .primary_cta {
     background-color: #e3a400;
     border-color: #e3a400;
     color: #fff;
   }
-  .two_column_block {
+  .page-layout-1column .columns .column.main .two_column_block {
     flex-direction: column;
   }
-  .two_column_block .column {
+  .page-layout-1column .columns .column.main .two_column_block .column {
     flex: unset;
     width: 100%;
   }
-  .home_slider_block {
+  .page-layout-1column .columns .column.main .home_slider_block {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
   }
-  .home_slider_block .primary_title {
+  .page-layout-1column .columns .column.main .home_slider_block .primary_title {
     padding-bottom: 10px;
   }
-  .home_slider_block > .primary_text {
+  .page-layout-1column .columns .column.main .home_slider_block > .primary_text {
     text-align: center;
     padding-bottom: 20px;
   }
-  .home_slider_block .swiper-slide {
+  .page-layout-1column .columns .column.main .home_slider_block .swiper-slide {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 20px;
   }
-  .home_slider_block .slider_tabs {
+  .page-layout-1column .columns .column.main .home_slider_block .slider_tabs {
     padding-bottom: 20px;
     gap: 15px;
     justify-content: start;
     overflow-x: auto;
   }
-  .home_slider_block .slider_tabs::-webkit-scrollbar {
+  .page-layout-1column .columns .column.main .home_slider_block .slider_tabs::-webkit-scrollbar {
     display: none;
   }
-  .home_slider_block .slider_tabs .transparent_cta {
+  .page-layout-1column .columns .column.main .home_slider_block .slider_tabs .transparent_cta {
     min-width: 8em;
     border-radius: 20px;
     color: #000000;
     font-size: 14px;
     line-height: 13px;
   }
-  .home_slider_block .swiper-wrapper {
+  .page-layout-1column .columns .column.main .home_slider_block .swiper-wrapper {
     padding-bottom: 30px;
   }
-  .img_card {
+  .page-layout-1column .columns .column.main .img_card {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -1086,44 +1086,44 @@ footer .footer_bottom .bottom_footer p {
     gap: 8px;
     padding: 20px;
   }
-  .img_card h3 {
+  .page-layout-1column .columns .column.main .img_card h3 {
     font-size: 17px;
     line-height: 28px;
   }
-  .top_cnt_view {
+  .page-layout-1column .columns .column.main .top_cnt_view {
     padding-bottom: 20px;
   }
-  .top_cnt_view a.primary_text {
+  .page-layout-1column .columns .column.main .top_cnt_view a.primary_text {
     color: #000000;
     font-weight: 500;
   }
-  .top_cnt_view a.primary_text::after {
+  .page-layout-1column .columns .column.main .top_cnt_view a.primary_text::after {
     content: url("../images/black_arrow.webp");
     margin-left: 10px;
     margin-bottom: 2px;
   }
-  .home_explore .explore_tabs {
+  .page-layout-1column .columns .column.main .home_explore .explore_tabs {
     margin-bottom: 20px;
   }
-  .home_explore .swiper-wrapper {
+  .page-layout-1column .columns .column.main .home_explore .swiper-wrapper {
     padding-bottom: 30px;
   }
-  .home_explore.blue_bg {
+  .page-layout-1column .columns .column.main .home_explore.blue_bg {
     background-color: #ecf4ff;
   }
-  .vehicles_card .img_block {
+  .page-layout-1column .columns .column.main .vehicles_card .img_block {
     position: relative;
   }
-  .vehicles_card .img_block .pro_img {
+  .page-layout-1column .columns .column.main .vehicles_card .img_block .pro_img {
     width: 100%;
     object-fit: fill;
   }
-  .vehicles_card .img_block .icon {
+  .page-layout-1column .columns .column.main .vehicles_card .img_block .icon {
     position: absolute;
     top: 10px;
     right: 10px;
   }
-  .vehicles_card .img_block .img_cta {
+  .page-layout-1column .columns .column.main .vehicles_card .img_block .img_cta {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -1135,45 +1135,45 @@ footer .footer_bottom .bottom_footer p {
     border-color: #e3a400;
     min-width: 6em;
   }
-  .vehicles_card .cnt_block {
+  .page-layout-1column .columns .column.main .vehicles_card .cnt_block {
     padding: 20px;
   }
-  .vehicles_card .cnt_block .cnt_title {
+  .page-layout-1column .columns .column.main .vehicles_card .cnt_block .cnt_title {
     font-size: 18px;
     line-height: 28px;
     padding-bottom: 20px;
     color: #fff;
     font-weight: 500;
   }
-  .vehicles_card .cnt_block .price_block {
+  .page-layout-1column .columns .column.main .vehicles_card .cnt_block .price_block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
   }
-  .vehicles_card .cnt_block .price_block .view_detail {
+  .page-layout-1column .columns .column.main .vehicles_card .cnt_block .price_block .view_detail {
     font-size: 14px;
     line-height: 23px;
     color: #ffffff;
     font-weight: 500;
   }
-  .vehicles_card .cnt_block .price_block .view_detail::after {
+  .page-layout-1column .columns .column.main .vehicles_card .cnt_block .price_block .view_detail::after {
     content: url("../images/cta_arrow.webp");
     margin-left: 10px;
   }
-  .vehicles_card .cnt_block .price_block .price {
+  .page-layout-1column .columns .column.main .vehicles_card .cnt_block .price_block .price {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     color: #fff;
   }
-  .home_car_comparison {
+  .page-layout-1column .columns .column.main .home_car_comparison {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     background-image: none;
   }
-  .home_car_comparison h2 {
+  .page-layout-1column .columns .column.main .home_car_comparison h2 {
     font-size: 20px;
     line-height: 28px;
     color: #00040d;
@@ -1181,30 +1181,30 @@ footer .footer_bottom .bottom_footer p {
     width: 100%;
     margin: auto;
   }
-  .home_car_comparison p {
+  .page-layout-1column .columns .column.main .home_car_comparison p {
     font-size: 17px;
     line-height: 28px;
     color: #1d1d1f;
     padding-bottom: 10px;
   }
-  .home_car_comparison .primary_cta {
+  .page-layout-1column .columns .column.main .home_car_comparison .primary_cta {
     min-width: 9em;
   }
-  .blog_Card .blog_cnt {
+  .page-layout-1column .columns .column.main .blog_Card .blog_cnt {
     padding: 15px;
   }
-  .blog_Card .blog_cnt > a {
+  .page-layout-1column .columns .column.main .blog_Card .blog_cnt > a {
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 5px;
   }
-  .blog_Card .blog_cnt p {
+  .page-layout-1column .columns .column.main .blog_Card .blog_cnt p {
     color: #8C8C8C;
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 22px;
   }
-  .blog_Card .blog_cnt .read_cta {
+  .page-layout-1column .columns .column.main .blog_Card .blog_cnt .read_cta {
     color: #0066CC;
     font-size: 14px;
     line-height: 22px;
@@ -1212,29 +1212,29 @@ footer .footer_bottom .bottom_footer p {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .main_banner .banner_content {
+  .page-layout-1column .columns .column.main .main_banner .banner_content {
     max-width: 100%;
     border-radius: 10px;
     box-sizing: border-box;
     margin: auto;
   }
-  .main_banner .banner_content h1 {
+  .page-layout-1column .columns .column.main .main_banner .banner_content h1 {
     color: #FFF;
     text-align: center;
     font-size: 30px;
     line-height: 38px;
     padding-bottom: 10px;
   }
-  .main_banner .banner_content p {
+  .page-layout-1column .columns .column.main .main_banner .banner_content p {
     display: none;
   }
-  .main_banner .banner_content .nav-tabs {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .nav-tabs {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
     gap: 15px;
   }
-  .main_banner .banner_content .search-container {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container {
     background-color: white;
     padding: 15px;
     border-radius: 10px;
@@ -1245,15 +1245,15 @@ footer .footer_bottom .bottom_footer p {
     flex-wrap: wrap;
     box-sizing: border-box;
   }
-  .main_banner .banner_content .search-container .primary_cta {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container .primary_cta {
     min-width: 9em;
     justify-content: center;
   }
-  .main_banner .banner_content .search-container .primary_cta:hover {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container .primary_cta:hover {
     background-color: #00397B;
     color: #fff;
   }
-  .main_banner .banner_content .search-container select {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container select {
     margin: 5px;
     border: 0px;
     outline: none;
@@ -1261,39 +1261,39 @@ footer .footer_bottom .bottom_footer p {
     flex: 1;
     background-position: 92% center;
   }
-  .main_banner .banner_content .search-container select:nth-child(2) {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container select:nth-child(2) {
     border-inline: 0px solid #e5e5e5;
     border-radius: 0px;
   }
-  .main_banner .banner_content .search-container .advance-filter {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container .advance-filter {
     margin-top: 15px;
     color: white;
     text-decoration: underline;
     cursor: pointer;
   }
-  select {
+  .page-layout-1column .columns .column.main select {
     border: 0px;
     background-color: transparent;
     font-size: 17px;
     line-height: 22px;
   }
-  .post_Card {
+  .page-layout-1column .columns .column.main .post_Card {
     padding: 15px;
   }
-  .post_Card h3 {
+  .page-layout-1column .columns .column.main .post_Card h3 {
     min-width: 48px;
   }
-  .post_Card ul {
+  .page-layout-1column .columns .column.main .post_Card ul {
     min-height: 105px;
   }
-  .two_column_block {
+  .page-layout-1column .columns .column.main .two_column_block {
     flex-direction: row;
   }
-  .two_column_block .column {
+  .page-layout-1column .columns .column.main .two_column_block .column {
     flex: 1;
     width: 100%;
   }
-  .home_car_comparison {
+  .page-layout-1column .columns .column.main .home_car_comparison {
     background-color: rgba(228, 239, 255, 0.5);
     padding: 60px;
     border-radius: 10px;
@@ -1303,22 +1303,22 @@ footer .footer_bottom .bottom_footer p {
     background-repeat: no-repeat, no-repeat;
     background-size: 200px, 200px;
   }
-  .home_car_comparison h2 {
+  .page-layout-1column .columns .column.main .home_car_comparison h2 {
     width: 60%;
     margin: auto;
   }
 }
 @media only screen and (min-width:1025px) and (max-width: 1480px) {
-  .main_banner {
+  .page-layout-1column .columns .column.main .main_banner {
     position: relative;
   }
-  .main_banner img {
+  .page-layout-1column .columns .column.main .main_banner img {
     width: 100%;
   }
-  .main_banner .banner_content {
+  .page-layout-1column .columns .column.main .main_banner .banner_content {
     max-width: 900px;
   }
-  .main_banner .banner_content h1 {
+  .page-layout-1column .columns .column.main .main_banner .banner_content h1 {
     color: #FFF;
     text-align: center;
     font-size: 55px;
@@ -1327,7 +1327,7 @@ footer .footer_bottom .bottom_footer p {
     padding-bottom: 10px;
     text-transform: capitalize;
   }
-  .main_banner .banner_content p {
+  .page-layout-1column .columns .column.main .main_banner .banner_content p {
     color: #FFF;
     text-align: center;
     font-size: 20px;
@@ -1335,13 +1335,13 @@ footer .footer_bottom .bottom_footer p {
     line-height: 33px;
     padding-bottom: 25px;
   }
-  .main_banner .banner_content .nav-tabs {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .nav-tabs {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
     gap: 20px;
   }
-  .main_banner .banner_content .search-container {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .search-container {
     background-color: white;
     padding: 12px;
     border-radius: 10px;
@@ -1350,33 +1350,33 @@ footer .footer_bottom .bottom_footer p {
     justify-content: space-between;
     gap: 30px;
   }
-  .main_banner .banner_content .banner_cta_block {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .banner_cta_block {
     padding-top: 20px;
   }
-  .main_banner .banner_content .banner_cta_block .primary_cta.banner_cta {
+  .page-layout-1column .columns .column.main .main_banner .banner_content .banner_cta_block .primary_cta.banner_cta {
     background: transparent;
     color: #fff;
     border-color: #fff;
   }
-  .sell_Car > .primary_title {
+  .page-layout-1column .columns .column.main .sell_Car > .primary_title {
     padding-bottom: 30px;
     text-transform: capitalize;
   }
-  .post_Card {
+  .page-layout-1column .columns .column.main .post_Card {
     padding: 40px;
     border-radius: 10px;
     box-sizing: border-box;
   }
-  .post_Card ul li {
+  .page-layout-1column .columns .column.main .post_Card ul li {
     color: #5A5A5A;
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 6px;
   }
-  .post_Card.blue_card {
+  .page-layout-1column .columns .column.main .post_Card.blue_card {
     background-color: #ECF4FF;
   }
-  .post_Card.blue_card h3 {
+  .page-layout-1column .columns .column.main .post_Card.blue_card h3 {
     font-size: 30px;
     line-height: 38px;
     color: #00397B;
@@ -1384,10 +1384,10 @@ footer .footer_bottom .bottom_footer p {
     padding-bottom: 20px;
     min-height: 80px;
   }
-  .post_Card.yellow_card {
+  .page-layout-1column .columns .column.main .post_Card.yellow_card {
     background-color: rgba(248, 206, 98, 0.14);
   }
-  .post_Card.yellow_card h3 {
+  .page-layout-1column .columns .column.main .post_Card.yellow_card h3 {
     font-size: 30px;
     line-height: 38px;
     color: #d39904;
@@ -1395,18 +1395,18 @@ footer .footer_bottom .bottom_footer p {
     padding-bottom: 20px;
     min-height: 80px;
   }
-  .two_column_block {
+  .page-layout-1column .columns .column.main .two_column_block {
     display: flex;
     gap: 20px;
     align-items: center;
   }
-  .home_car_comparison {
+  .page-layout-1column .columns .column.main .home_car_comparison {
     padding: 80px;
     border-radius: 10px;
     text-align: center;
     background-size: 230px, 230px;
   }
-  .home_car_comparison h2 {
+  .page-layout-1column .columns .column.main .home_car_comparison h2 {
     font-size: 35px;
     line-height: 46px;
     color: #00040d;
@@ -1414,21 +1414,21 @@ footer .footer_bottom .bottom_footer p {
     width: 60%;
     margin: auto;
   }
-  .home_car_comparison p {
+  .page-layout-1column .columns .column.main .home_car_comparison p {
     font-size: 20px;
     line-height: 30px;
     color: #1d1d1f;
     padding-bottom: 20px;
   }
-  .home_car_comparison .primary_cta {
+  .page-layout-1column .columns .column.main .home_car_comparison .primary_cta {
     min-width: 14em;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1480px) {
-  .post_Card.blue_card {
+  .page-layout-1column .columns .column.main .post_Card.blue_card {
     background-color: #ECF4FF;
   }
-  .post_Card.blue_card h3 {
+  .page-layout-1column .columns .column.main .post_Card.blue_card h3 {
     font-size: 30px;
     line-height: 38px;
     color: #00397B;
@@ -1436,10 +1436,10 @@ footer .footer_bottom .bottom_footer p {
     padding-bottom: 20px;
     min-height: 0px;
   }
-  .post_Card.yellow_card {
+  .page-layout-1column .columns .column.main .post_Card.yellow_card {
     background-color: rgba(248, 206, 98, 0.14);
   }
-  .post_Card.yellow_card h3 {
+  .page-layout-1column .columns .column.main .post_Card.yellow_card h3 {
     font-size: 30px;
     line-height: 38px;
     color: #d39904;
