@@ -160,7 +160,7 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
     // }
     .primary_title{text-transform: capitalize; color: rgba(20, 22, 82, 1); padding-bottom: 15px;}
   >  .primary_text{text-align: center; padding-bottom: 40px;}
-.swiper-slide { display: grid; grid-template-columns: repeat(5,1fr); gap: 20px; }
+.slider_child { display: grid; grid-template-columns: repeat(5,1fr); gap: 20px;  }
 .slider_tabs{padding-bottom: 40px; display: flex; gap: 25px; justify-content: center;
     .transparent_cta{min-width: 6em; border-radius: 50px; color:rgba(0, 0, 0, 1); font-size: 16px; line-height: 18px; border: 1px solid  rgba(233, 233, 234, 1);
        &.active{border-color: @red_color; color: @red_color;}
@@ -172,15 +172,26 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
 
 }
 
-.swiper-wrapper{padding-bottom: 40px;
+.slick-list{padding-bottom: 40px;
 }
 
-.swiper-pagination-bullets{position: static;
- 
-    .swiper-pagination-bullet {    background: transparent;
-     border: 1px solid rgba(0, 21, 63, 1);
-           &.swiper-pagination-bullet-active{background:  rgba(0, 21, 63, 1);}
- }
+
+.slick-dots{position: static;
+     li {
+        button {background: transparent;
+            border: 1px solid rgba(0, 21, 63, 1);color:rgba(0, 21, 63, 1) ;    border-radius: 50%; width: 10px; height: 10px;
+          &::before {
+             display: none;
+          }
+        }
+         &.slick-active{
+         
+            button {
+                background:  rgba(0, 21, 63, 1);    
+            }
+         }   
+     }
+   
  }
 
 .img_card { background-color: white; border: 1px solid #ddd; border-radius: 8px; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); flex-direction: column; gap: 8px; padding: 45px;
@@ -238,7 +249,7 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
         }
        
     }
-    .swiper-wrapper{padding-bottom: 40px;
+    .slick-list{padding-bottom: 40px;
     }
     
     &.blue_bg{
@@ -265,18 +276,33 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
      .explore_tabs{
         .tab{color: #ffff;}
      }
+     .vehicle_slider {
+        .slick-track{display: flex;gap: 30px;}
+     }
+    
 
-     .swiper-pagination-bullets{position: static;
- 
-        .swiper-pagination-bullet {    background: transparent;
-         border: 1px solid  rgba(255, 255, 255, 1);
-               &.swiper-pagination-bullet-active{background:  
-                rgba(255, 255, 255, 1)}
-     }
-     }
+
+
+    .slick-dots{position: static;
+        li {
+           button {background: transparent;
+              border: 1px solid  rgba(255, 255, 255, 1);
+             &::before {
+                display: none;
+             }
+           }
+            &.slick-active{
+            
+               button {
+                background: rgba(255, 255, 255, 1)}   
+               }
+            }   
+        }
+      
+    }
     }
 }
-
+.slick-track{display: flex;gap: 30px;}
 
 .vehicles_card{
     background-color:   rgba(3, 37, 76, 1); border-radius: 12px;
@@ -402,4 +428,4 @@ select{border:0px; background-color: transparent; font-size: 17px; line-height: 
 }
         }
     }
-}
+
