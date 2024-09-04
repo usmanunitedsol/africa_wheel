@@ -280,7 +280,7 @@ body {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .grid_3 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (min-width:1025px) and (max-width: 1480px) {
@@ -1050,7 +1050,7 @@ footer .footer_bottom .bottom_footer p {
     text-align: center;
     padding-bottom: 20px;
   }
-  .page-layout-1column .columns .column.main .home_slider_block .swiper-slide {
+  .page-layout-1column .columns .column.main .home_slider_block .slider_child {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 20px;
@@ -1071,7 +1071,7 @@ footer .footer_bottom .bottom_footer p {
     font-size: 14px;
     line-height: 13px;
   }
-  .page-layout-1column .columns .column.main .home_slider_block .swiper-wrapper {
+  .page-layout-1column .columns .column.main .home_slider_block .slick-list {
     padding-bottom: 30px;
   }
   .page-layout-1column .columns .column.main .img_card {
@@ -1093,6 +1093,10 @@ footer .footer_bottom .bottom_footer p {
   .page-layout-1column .columns .column.main .top_cnt_view {
     padding-bottom: 20px;
   }
+  .page-layout-1column .columns .column.main .top_cnt_view a {
+    flex: 1;
+    text-align: end;
+  }
   .page-layout-1column .columns .column.main .top_cnt_view a.primary_text {
     color: #000000;
     font-weight: 500;
@@ -1101,6 +1105,9 @@ footer .footer_bottom .bottom_footer p {
     content: url("../images/black_arrow.webp");
     margin-left: 10px;
     margin-bottom: 2px;
+  }
+  .page-layout-1column .columns .column.main .top_cnt_view .primary_title {
+    flex: 1;
   }
   .page-layout-1column .columns .column.main .home_explore .explore_tabs {
     margin-bottom: 20px;

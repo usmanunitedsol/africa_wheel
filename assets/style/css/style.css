@@ -280,7 +280,7 @@ body {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .grid_3 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (min-width:1025px) and (max-width: 1480px) {
@@ -1105,7 +1105,7 @@ footer .footer_bottom .bottom_footer p {
   text-align: center;
   padding-bottom: 40px;
 }
-.page-layout-1column .columns .column.main .home_slider_block .swiper-slide {
+.page-layout-1column .columns .column.main .home_slider_block .slider_child {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
@@ -1132,17 +1132,24 @@ footer .footer_bottom .bottom_footer p {
   color: #fff;
   border-color: #00397B;
 }
-.page-layout-1column .columns .column.main .swiper-wrapper {
+.page-layout-1column .columns .column.main .slick-list {
   padding-bottom: 40px;
 }
-.page-layout-1column .columns .column.main .swiper-pagination-bullets {
+.page-layout-1column .columns .column.main .slick-dots {
   position: static;
 }
-.page-layout-1column .columns .column.main .swiper-pagination-bullets .swiper-pagination-bullet {
+.page-layout-1column .columns .column.main .slick-dots li button {
   background: transparent;
   border: 1px solid #00153f;
+  color: #00153f;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
-.page-layout-1column .columns .column.main .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.page-layout-1column .columns .column.main .slick-dots li button::before {
+  display: none;
+}
+.page-layout-1column .columns .column.main .slick-dots li.slick-active button {
   background: #00153f;
 }
 .page-layout-1column .columns .column.main .img_card {
@@ -1211,7 +1218,7 @@ footer .footer_bottom .bottom_footer p {
   height: 3px;
   background-color: #f5a623;
 }
-.page-layout-1column .columns .column.main .home_explore .swiper-wrapper {
+.page-layout-1column .columns .column.main .home_explore .slick-list {
   padding-bottom: 40px;
 }
 .page-layout-1column .columns .column.main .home_explore.blue_bg {
@@ -1236,33 +1243,44 @@ footer .footer_bottom .bottom_footer p {
 .page-layout-1column .columns .column.main .home_explore.dark_grey .explore_tabs .tab {
   color: #ffff;
 }
-.page-layout-1column .columns .column.main .home_explore.dark_grey .swiper-pagination-bullets {
+.page-layout-1column .columns .column.main .home_explore.dark_grey .vehicle_slider .slick-track {
+  display: flex;
+  gap: 30px;
+}
+.page-layout-1column .columns .column.main .home_explore.dark_grey .slick-dots {
   position: static;
 }
-.page-layout-1column .columns .column.main .home_explore.dark_grey .swiper-pagination-bullets .swiper-pagination-bullet {
+.page-layout-1column .columns .column.main .home_explore.dark_grey .slick-dots li button {
   background: transparent;
   border: 1px solid #ffffff;
 }
-.page-layout-1column .columns .column.main .home_explore.dark_grey .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.page-layout-1column .columns .column.main .home_explore.dark_grey .slick-dots li button::before {
+  display: none;
+}
+.page-layout-1column .columns .column.main .home_explore.dark_grey .slick-dots li.slick-active button {
   background: #ffffff;
 }
-.page-layout-1column .columns .column.main .vehicles_card {
+.page-layout-1column .columns .column .slick-track {
+  display: flex;
+  gap: 30px;
+}
+.page-layout-1column .columns .column .vehicles_card {
   background-color: #03254c;
   border-radius: 12px;
 }
-.page-layout-1column .columns .column.main .vehicles_card .img_block {
+.page-layout-1column .columns .column .vehicles_card .img_block {
   position: relative;
 }
-.page-layout-1column .columns .column.main .vehicles_card .img_block .pro_img {
+.page-layout-1column .columns .column .vehicles_card .img_block .pro_img {
   width: 100%;
   object-fit: fill;
 }
-.page-layout-1column .columns .column.main .vehicles_card .img_block .icon {
+.page-layout-1column .columns .column .vehicles_card .img_block .icon {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-.page-layout-1column .columns .column.main .vehicles_card .img_block .img_cta {
+.page-layout-1column .columns .column .vehicles_card .img_block .img_cta {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -1274,91 +1292,91 @@ footer .footer_bottom .bottom_footer p {
   border-color: #e3a400;
   min-width: 7em;
 }
-.page-layout-1column .columns .column.main .vehicles_card .cnt_block {
+.page-layout-1column .columns .column .vehicles_card .cnt_block {
   padding: 20px 30px;
 }
-.page-layout-1column .columns .column.main .vehicles_card .cnt_block .cnt_title {
+.page-layout-1column .columns .column .vehicles_card .cnt_block .cnt_title {
   font-size: 20px;
   line-height: 32px;
   padding-bottom: 20px;
   color: #fff;
   font-weight: 500;
 }
-.page-layout-1column .columns .column.main .vehicles_card .cnt_block .cnt_icons {
+.page-layout-1column .columns .column .vehicles_card .cnt_block .cnt_icons {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #646464;
   padding-bottom: 15px;
 }
-.page-layout-1column .columns .column.main .vehicles_card .cnt_block .cnt_icons .icon {
+.page-layout-1column .columns .column .vehicles_card .cnt_block .cnt_icons .icon {
   text-align: center;
 }
-.page-layout-1column .columns .column.main .vehicles_card .cnt_block .cnt_icons .icon p {
+.page-layout-1column .columns .column .vehicles_card .cnt_block .cnt_icons .icon p {
   font-size: 14px;
   line-height: 21px;
   color: #ffff;
   font-weight: 400;
 }
-.page-layout-1column .columns .column.main .vehicles_card .cnt_block .price_block {
+.page-layout-1column .columns .column .vehicles_card .cnt_block .price_block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
 }
-.page-layout-1column .columns .column.main .vehicles_card .cnt_block .price_block .view_detail {
+.page-layout-1column .columns .column .vehicles_card .cnt_block .price_block .view_detail {
   font-size: 15px;
   line-height: 23px;
   color: #ffffff;
   font-weight: 500;
 }
-.page-layout-1column .columns .column.main .vehicles_card .cnt_block .price_block .view_detail::after {
+.page-layout-1column .columns .column .vehicles_card .cnt_block .price_block .view_detail::after {
   content: url("../images/cta_arrow.webp");
   margin-left: 10px;
 }
-.page-layout-1column .columns .column.main .vehicles_card .cnt_block .price_block .price {
+.page-layout-1column .columns .column .vehicles_card .cnt_block .price_block .price {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
   color: #fff;
 }
-.page-layout-1column .columns .column.main .vehicles_card.dark_grey {
+.page-layout-1column .columns .column .vehicles_card.dark_grey {
   background-color: #3f3f3f;
 }
-.page-layout-1column .columns .column.main .vehicles_card.white_bg {
+.page-layout-1column .columns .column .vehicles_card.white_bg {
   background-color: #fff;
 }
-.page-layout-1column .columns .column.main .vehicles_card.white_bg .cnt_block .cnt_title {
+.page-layout-1column .columns .column .vehicles_card.white_bg .cnt_block .cnt_title {
   color: #050b20;
 }
-.page-layout-1column .columns .column.main .vehicles_card.white_bg .cnt_block .icon p {
+.page-layout-1column .columns .column .vehicles_card.white_bg .cnt_block .icon p {
   color: #666666;
 }
-.page-layout-1column .columns .column.main .vehicles_card.white_bg .cnt_block .price_block .price {
+.page-layout-1column .columns .column .vehicles_card.white_bg .cnt_block .price_block .price {
   color: #222222;
 }
-.page-layout-1column .columns .column.main .vehicles_card.white_bg .cnt_block .price_block .view_detail {
+.page-layout-1column .columns .column .vehicles_card.white_bg .cnt_block .price_block .view_detail {
   color: #0066cc;
 }
-.page-layout-1column .columns .column.main .vehicles_card.white_bg .cnt_block .price_block .view_detail::after {
+.page-layout-1column .columns .column .vehicles_card.white_bg .cnt_block .price_block .view_detail::after {
   content: url("../images/blue_arrow.webp");
   margin-left: 10px;
 }
-.page-layout-1column .columns .column.main .africa_whell_home .top_cnt_view {
+.page-layout-1column .columns .column .africa_whell_home .top_cnt_view {
   padding-bottom: 50px;
 }
-.page-layout-1column .columns .column.main .africa_whell_home .top_cnt_view h2 {
+.page-layout-1column .columns .column .africa_whell_home .top_cnt_view h2 {
   color: #141652;
 }
-.page-layout-1column .columns .column.main .africa_whell_home .img_card p {
+.page-layout-1column .columns .column .africa_whell_home .img_card p {
   color: #7e7e7e;
   width: 70%;
   margin: auto;
   text-align: center;
 }
-.page-layout-1column .columns .column.main .africa_whell_home .img_card:hover {
+.page-layout-1column .columns .column .africa_whell_home .img_card:hover {
   border-color: #E61122;
 }
-.page-layout-1column .columns .column.main .home_car_comparison {
+.page-layout-1column .columns .column .home_car_comparison {
   background-color: rgba(228, 239, 255, 0.5);
   padding: 100px;
   border-radius: 10px;
@@ -1368,7 +1386,7 @@ footer .footer_bottom .bottom_footer p {
   background-repeat: no-repeat, no-repeat;
   background-size: 250px, 250px;
 }
-.page-layout-1column .columns .column.main .home_car_comparison h2 {
+.page-layout-1column .columns .column .home_car_comparison h2 {
   font-size: 45px;
   line-height: 56px;
   color: #00040d;
@@ -1376,29 +1394,29 @@ footer .footer_bottom .bottom_footer p {
   width: 60%;
   margin: auto;
 }
-.page-layout-1column .columns .column.main .home_car_comparison p {
+.page-layout-1column .columns .column .home_car_comparison p {
   font-size: 21px;
   line-height: 30px;
   color: #1d1d1f;
   padding-bottom: 20px;
 }
-.page-layout-1column .columns .column.main .home_car_comparison .primary_cta {
+.page-layout-1column .columns .column .home_car_comparison .primary_cta {
   min-width: 14em;
 }
-.page-layout-1column .columns .column.main .blog_home .top_cnt_view .primary_title {
+.page-layout-1column .columns .column .blog_home .top_cnt_view .primary_title {
   color: #141652;
 }
-.page-layout-1column .columns .column.main .blog_Card {
+.page-layout-1column .columns .column .blog_Card {
   background-color: #F1F7FF;
   border-radius: 24px;
 }
-.page-layout-1column .columns .column.main .blog_Card .blog_img img {
+.page-layout-1column .columns .column .blog_Card .blog_img img {
   width: 100%;
 }
-.page-layout-1column .columns .column.main .blog_Card .blog_cnt {
+.page-layout-1column .columns .column .blog_Card .blog_cnt {
   padding: 25px;
 }
-.page-layout-1column .columns .column.main .blog_Card .blog_cnt .block_read {
+.page-layout-1column .columns .column .blog_Card .blog_cnt .block_read {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -1406,17 +1424,17 @@ footer .footer_bottom .bottom_footer p {
   line-height: 20px;
   padding-bottom: 15px;
 }
-.page-layout-1column .columns .column.main .blog_Card .blog_cnt .block_read a {
+.page-layout-1column .columns .column .blog_Card .blog_cnt .block_read a {
   background-color: #CEE4FE;
   color: #000;
   padding: 6px;
   border-radius: 5px;
   font-weight: 500;
 }
-.page-layout-1column .columns .column.main .blog_Card .blog_cnt .block_read span {
+.page-layout-1column .columns .column .blog_Card .blog_cnt .block_read span {
   color: #8C8C8C;
 }
-.page-layout-1column .columns .column.main .blog_Card .blog_cnt > a {
+.page-layout-1column .columns .column .blog_Card .blog_cnt > a {
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 8px;
@@ -1427,7 +1445,7 @@ footer .footer_bottom .bottom_footer p {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.page-layout-1column .columns .column.main .blog_Card .blog_cnt p {
+.page-layout-1column .columns .column .blog_Card .blog_cnt p {
   color: #8C8C8C;
   margin-bottom: 14px;
   font-size: 16px;
@@ -1437,13 +1455,13 @@ footer .footer_bottom .bottom_footer p {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.page-layout-1column .columns .column.main .blog_Card .blog_cnt .read_cta {
+.page-layout-1column .columns .column .blog_Card .blog_cnt .read_cta {
   color: #0066CC;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 }
-.page-layout-1column .columns .column.main .blog_Card .blog_cnt .read_cta::after {
+.page-layout-1column .columns .column .blog_Card .blog_cnt .read_cta::after {
   content: url("../images/blue_arrow.webp");
   margin-left: 10px;
 }
