@@ -1,0 +1,102 @@
+.page-layout-1column {
+    .columns {
+        .column {
+            .section_padding {
+                padding: 35px 0px;
+
+                .title_block {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .title_features {
+                        .product_title {
+                            font-size: 32px;
+                            line-height: 44px;
+                            color: #1F2B59;
+                            margin-bottom: 10px;
+                        }
+
+                        .features {
+                            display: flex;
+                            align-items: center;
+                            gap: 25px;
+                            justify-content: flex-start;
+
+                            .km, .date, .time, .manual, .petrol {
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                                color: #757575;
+                                font-size: 15px;
+                                font-weight: 500;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                    .action {
+                        display: flex;
+                        align-items: center;
+                        gap: 25px;
+
+                        .favourite, .share {
+                            display: flex;
+                            align-items: center;
+                            color: #2F2F2F;
+                            font-size: 16px;
+                            line-height: 20px;
+                            font-weight: 500;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .slideshow {
+                width: 100%;
+
+                .slick-prev, .slick-next {
+                    background: #ffffff;
+                    border-radius: 4px;
+                    text-align: center;
+                    width: 32px;
+                    height: 32px;
+                    padding: 5px;
+                    box-sizing: border-box;
+                }
+
+                .slick-next {
+                    right: 70px;
+                    z-index: 99;
+
+                    &::before {
+                        content: ""
+                    }
+                }
+
+                .slick-prev {
+                    left: 70px;
+                    z-index: 99;
+
+
+                    &::before {
+                        content: ""
+                    }
+                }
+
+
+                h3 {
+                    background: #772f2f;
+                    color: #3498db;
+                    font-size: 36px;
+                    line-height: 100px;
+                    margin: 0 1px;
+                    padding: 2%;
+                    position: relative;
+                    text-align: center;
+                }
+              }
+        }
+    }
+}
